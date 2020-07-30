@@ -1,0 +1,208 @@
+html {
+  background:rgb(44, 62, 80);
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: rgb(44, 62, 80);
+}
+
+/*Beginning of nav*/
+
+.dropdown {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Amatic SC', cursive;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: rgb(44, 62, 80);
+  font-family: 'Julius Sans One', sans-serif;
+  padding-right: 2vmin;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li, nav ul li a {
+  background: rgb(44, 62, 80);
+  position: relative;
+  list-style: none;
+  display:inline-block;
+  padding: 0 15px;
+  color: white;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+nav ul .selector {
+  padding: 0;
+  right: 1.54px;
+}
+
+nav ul li:hover > a, nav ul li:hover {
+  background-color: rgb(36, 51, 66);
+}
+
+nav ul ul {
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul li {
+  width: 100%;
+  display: item-list;
+  position: relative;
+}
+
+/*end of nav*/
+
+/*start of slideshow*/
+
+.slideshow {
+  overflow: hidden;
+  width: 75%;
+  margin-bottom: 5vmax;
+}
+
+figure {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  animation: slide_animation 20s infinite;
+}
+
+.container {
+  position: relative;
+  width: 25%;
+  float: left;
+  background-color: gray;
+}
+
+.container img {
+  position: relative;
+  width: 100%;
+}
+
+.container p {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 60%;
+  top: 40%;
+  left: 20%;
+  font-size: 1vmax;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+}
+
+.container a {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 5vmax;
+  height: 5vmax;
+  top: 75%;
+  left: 45%;
+}
+
+.container i {
+  font-size: 3vmax;
+}
+
+.container .instagram i {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  top: 21%;
+  left: 24%;
+}
+
+.container .youtube i {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 16%;
+}
+
+.container a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+figure:hover {
+  animation-play-state: paused;
+}
+
+figure:hover > .container p, figure:hover > .container a {
+  display: block;
+  animation: fadein 1s linear forwards;
+}
+
+figure:hover > .container img {
+  animation: fadeout 1s linear forwards;
+}
+
+@keyframes fadein {
+  from {opactity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {opactity: 1;}
+  to {opacity: 0.2;}
+}
+
+@keyframes slide_animation {
+  0% {left: 0;}
+  25% {left: 0;}
+  35% {left: -100%}
+  60% {left: -100%;}
+  70% {left: -200%;}
+  95% {left: -200%;}
+  100% {left: -300%;}
+}
+
+/*end of slideshow*/
+
+.text {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  color: white;
+  margin: 5vmax;
+}
