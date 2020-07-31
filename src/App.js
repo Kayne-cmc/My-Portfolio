@@ -1,6 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import './App.css';
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
+// import Slider from 'react-slick';
 import Skateboarding from './images/Skateboarding.jpg';
 import Projects from './images/Project-picture.png';
 import Welding from './images/Welding.jpg';
@@ -16,6 +19,8 @@ function App() {
           <div>
             <nav>
               <a className="title" href="./">Kayne Chu </a>
+              <input type="checkbox" id="menucheck"></input>
+              <label for="menucheck" className="menu"><i className="fas fa-bars"></i></label>
               <ul>
                 <li>
                   <Link to="/">About Me</Link>
@@ -73,8 +78,7 @@ function App() {
     
         <p className="text">
           Hi, I'm Kayne and I am a 2A Mechanical Engineering student at the University of Waterloo. I love a nice relaxing day of coding or skateboarding but most of all I love learning new things! Ever since I was a kid, I would always question. Whether its a solution or a design, every problem or difficult situation that I encounter, I would come up with a solution in my head. Without the proper experience, I was unable to make my designs come to life. As a future engineer I still hold the same goal I had as a child-to create awesome things that help others.
-        </p>        
-
+        </p>
 
       <div className="slideshow">
         <figure>
