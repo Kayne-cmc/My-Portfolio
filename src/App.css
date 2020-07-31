@@ -98,7 +98,7 @@ figure {
   width: 400%;
   margin: 0;
   left: 0;
-  animation: slide_animation 20s infinite;
+  animation: slide_animation 12s infinite;
 }
 
 .container {
@@ -188,12 +188,13 @@ figure:hover > .container img {
 }
 
 @keyframes slide_animation {
-  0% {left: 0;}
-  25% {left: 0;}
-  35% {left: -100%}
-  60% {left: -100%;}
+  5% {left: 0;}
+  10% {left: 0;}
+  20% {left: -100%;}
+  40% {left: -100%}
+  50% {left: -200%;}
   70% {left: -200%;}
-  95% {left: -200%;}
+  80% {left: -300%;}
   100% {left: -300%;}
 }
 
