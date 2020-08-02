@@ -1,11 +1,24 @@
 .slideshow {
-    margin: 0 auto;
+    margin: 0 auto 10vh;
     width: 75%;
+}
+
+.slideshow .slick-prev:before, .slideshow .slick-next:before {
+    font-size: 3vmin;
+    color: black;
+}
+
+.slideshow .slick-prev {
+    left: -4vmin;
+}
+
+.slideshow .slick-next {
+    right: -3vmin;
 }
 
 .container {
     position: relative;
-    background-color: gray;
+    background-color: rgb(100, 100, 100);
 }
 
 .container img {
