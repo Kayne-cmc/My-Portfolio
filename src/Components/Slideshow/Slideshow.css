@@ -1,0 +1,85 @@
+.slideshow {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.container {
+    position: relative;
+    background-color: gray;
+}
+
+.container img {
+    width: 100%;
+}
+
+.image-content {
+    position: absolute;
+    display: block;
+    top: 25%;
+    width: 75%;
+    margin: 0 12.5%;
+}
+
+.image-content p {
+    opacity: 0;
+    width: 100%;
+    font-size: 1.2vmax;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    margin-bottom: 10%
+}
+
+.image-content a {
+    display: block;
+    opacity: 0;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 5vmax;
+    height: 5vmax;
+    top: 75%;
+    margin: 0 auto;
+}
+
+.image-content a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.instagram i {
+    font-size: 3vmax;
+    position: relative;
+    width: 60%;
+    height: 60%;
+    top: 21%;
+    left: 24%;
+}
+
+.youtube i {
+    font-size: 3vmax;
+    position: relative;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 16%;
+}
+
+.container:hover > .image-content p, .container:hover > .image-content a {
+    animation: fadein 1s linear forwards;
+}
+
+.container:hover > img {
+    animation: fadeout 1s linear forwards;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0.2;}
+}
+
