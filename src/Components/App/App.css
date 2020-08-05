@@ -15,8 +15,39 @@ body {
   background: white;
 }
 
-#introduction {
+.opening {
+  display: flex;
+  justify-content: center;
   padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.portrait {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: auto 0;
+}
+
+.opening-text {
+  width: 50%;
+  min-width: 300px;
+}
+
+.hello {
+  color: black;
+  padding-left: 5vw;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.description {
   padding-bottom: 100px;
 }
 
@@ -25,7 +56,30 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: black;
   line-height: 160%;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-bottom: 20vh;
+  padding: 0 5vw 40px;
+}
+
+@media (max-width: 650px) {
+  .opening {
+    display: block;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .opening-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .introduction {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hello {
+    padding: 0;
+  }
 }
