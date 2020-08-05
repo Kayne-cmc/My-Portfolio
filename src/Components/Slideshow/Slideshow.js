@@ -32,11 +32,8 @@ function Slideshow() {
               learning a new trick is more difficult than what others often
               assume. I keep track of my progress on my instagram page.
             </p>
-            <a
-              className="instagram"
-              href="https://www.instagram.com/kayne.skates/"
-              target="blank"
-            >
+            <a href="https://www.instagram.com/kayne.skates/"
+              target="blank">
               <i className="fab fa-instagram"></i>
             </a>
           </div>
@@ -48,11 +45,8 @@ function Slideshow() {
               Working with 3D printing, my group and I printed parts to create a
               wind up climbing toy
             </p>
-            <a
-              className="youtube"
-              href="https://youtu.be/b8q1SQjiZmA"
-              target="blank"
-            >
+            <a href="https://youtu.be/b8q1SQjiZmA"
+              target="blank">
               <i className="fab fa-youtube"></i>
             </a>
           </div>

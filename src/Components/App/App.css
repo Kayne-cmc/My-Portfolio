@@ -34,12 +34,6 @@ body {
   min-width: 300px;
 }
 
-.hello {
-  color: black;
-  padding-left: 5vw;
-  font-family: 'Raleway', sans-serif;
-}
-
 .header {
   width: 100%;
   text-align: center;

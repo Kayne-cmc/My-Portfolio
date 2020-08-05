@@ -102,6 +102,7 @@ nav ul ul li {
 
   nav ul ul {
     display: block;
+    left: -100%
   }
 
   nav ul li a, nav ul li{

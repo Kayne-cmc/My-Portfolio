@@ -2,9 +2,39 @@
     background-color: white;
 }
 
-/* .header {
-    width: 100%;
-    text-align: center;
+#bottom-header {
+    padding: 0 5vw;
+    text-align: left;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem
+}
+
+.contact i {
+    font-size: 70px;
+    margin: 0 1vw;
+}
+
+.fa-linkedin {
+    color: rgb(14, 118, 168);
+}
+
+.fa-phone {
+    color: lightgreen;
+}
+
+.fa-envelope {
+    color: lightblue;
+}
+
+.fa-github {
     color: black;
-    font-family: 'Amatic SC', cursive;
-} */
+}
+
+.contact i:hover {
+    font-size: 85px;
+    transition: 400ms;
+}

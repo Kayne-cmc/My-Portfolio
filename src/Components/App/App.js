@@ -13,9 +13,12 @@ function App() {
         </div>
       </div>
       
-      <p className="description text">
+      <div>
+        <h1 className="header">My story, my goals</h1>
+        <p className="description text">
          Ever since I was a kid, I was always interested in how things worked. Whether its a solution or a design, every problem or difficult situation that I encounter, I would come up with a solution in my head. Without the proper experience, I was unable to make my designs come to life. As a future engineer I still hold the same goal I had as a child-to create awesome things that help others.
-      </p>
+        </p>
+      </div>
     </div>
   );
 }
