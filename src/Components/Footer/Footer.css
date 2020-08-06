@@ -5,6 +5,7 @@
 #bottom-header {
     margin-left: auto;
     margin-right: auto;
+    padding: 0 5vw;
     max-width: 1000px;
     text-align: left;
 }
