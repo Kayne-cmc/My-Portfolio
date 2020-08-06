@@ -29,7 +29,7 @@
 .image-content {
     position: absolute;
     display: block;
-    top: 25%;
+    top: 4vw;
     width: 75%;
     margin: 0 12.5%;
 }
@@ -37,11 +37,11 @@
 .image-content p {
     opacity: 0;
     width: 100%;
-    font-size: 1.2vmax;
+    font-size: 14px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
-    margin-bottom: 10%
+    margin-bottom: 1vh;
 }
 
 .image-content a {

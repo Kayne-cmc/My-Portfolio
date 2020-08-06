@@ -26,11 +26,7 @@ function Slideshow() {
           <img src={Skateboarding} alt="Skateboarding" width="100%" />
           <div className="image-content">
             <p>
-              Skateboarding was one of my very first hobbies as a kid. It has
-              been very influencial in my life and has changed my perspective on
-              learning. To me, skateboarding is a discipline. The challenge of
-              learning a new trick is more difficult than what others often
-              assume. I keep track of my progress on my instagram page.
+              One of my earliest memories as a kid was learning to ride a skateboard. It has been one of the most influencial aspects in my life and has changed my perspective on learning. To me, skateboarding is more than a hobby. Challenges only push me to work harder and skateboarding has been a demonstration of that. I keep track of my skateboarding progress on my instagram page.
             </p>
             <a href="https://www.instagram.com/kayne.skates/"
               target="blank">
