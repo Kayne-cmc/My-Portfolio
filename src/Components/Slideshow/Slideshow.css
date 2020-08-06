@@ -1,6 +1,7 @@
-.slideshow {
+.slider {
     margin: 0 auto 10vh;
     width: 75%;
+    max-width: 1000px;
 }
 
 .slideshow .slick-prev:before, .slideshow .slick-next:before {

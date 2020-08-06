@@ -16,11 +16,11 @@ function Slideshow() {
     autoplay: true,
     autoplaySpeed: 2500,
     pauseOnHover: true,
-    className: "slideshow",
+    className: "slider",
   };
 
   return (
-    <div>
+    <div className="Slideshow">
       <Slider {...settings}>
         <div className="container">
           <img src={Skateboarding} alt="Skateboarding" width="100%" />
