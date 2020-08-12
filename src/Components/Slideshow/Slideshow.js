@@ -3,7 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Skateboarding from "./images/Skateboarding.jpg";
+import Skateboarding from "./images/Skateboarding.mov";
 import Projects from "./images/Project-picture.png";
 import Welding from "./images/Welding.jpg";
 
@@ -11,10 +11,12 @@ function Slideshow() {
   let settings = {
     dots: true,
     infinite: true,
+    centerMode: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    // autoplaySpeed: 2500,
+    autoplaySpeed: 340000,
     pauseOnHover: true,
     className: "slider",
   };
@@ -23,7 +25,7 @@ function Slideshow() {
     <div className="Slideshow">
       <Slider {...settings}>
         <div className="container">
-          <img src={Skateboarding} alt="Skateboarding" width="100%" />
+          <video src={Skateboarding} autoPlay loop muted>Video not supported</video>
           <div className="image-content">
             <p>
               One of my earliest memories as a kid was learning to ride a skateboard. It has been one of the most influencial aspects in my life and has changed my perspective on learning. To me, skateboarding is more than a hobby. Challenges only push me to work harder and skateboarding has been a demonstration of that. I keep track of my skateboarding progress on my instagram page.
@@ -35,10 +37,11 @@ function Slideshow() {
           </div>
         </div>
         <div className="container">
-          <img src={Projects}></img>
+          <video src={Skateboarding} autoPlay loop muted>Video not supported</video>
+          {/* <img src={Projects} /> */}
           <div className="image-content">
             <p>
-              Working with 3D printing, my group and I printed parts to create a
+              Tasked with designing and building a prototype for a children's toy, my group and I at the University of Waterloo 3D printed parts to attach to a wind up boxWorking with 3D printing, my group and I printed parts to create a
               wind up climbing toy
             </p>
             <a href="https://youtu.be/b8q1SQjiZmA"
@@ -48,11 +51,11 @@ function Slideshow() {
           </div>
         </div>
         <div className="container">
-          <img src={Welding}></img>
+          <video src={Skateboarding} autoPlay loop muted>Video not supported</video>
+          {/* <img src={Welding} /> */}
           <div className="image-content">
             <p>
-              With some robotC coding, my group and I have programmed a robot to
-              pick up objects.
+              Using Android Studios, I created my very first mobile app. This game, called Escape the Cave, is a simple record game that involves jumping from platform to platform, and dodging rocks that are falling 
             </p>
             <a
               className="youtube"

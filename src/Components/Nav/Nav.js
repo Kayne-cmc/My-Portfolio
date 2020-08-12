@@ -5,7 +5,7 @@ import Resume from './Resume.pdf';
 
 function Nav() {
     return (
-        <div className="dropdown">
+        <div className="Dropdown">
             <Router>
                 <div>
                     <nav>

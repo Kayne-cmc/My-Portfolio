@@ -4,17 +4,8 @@
     max-width: 1000px;
 }
 
-.slideshow .slick-prev:before, .slideshow .slick-next:before {
-    font-size: 3vmin;
+.Slideshow .slick-prev:before, .Slideshow .slick-next:before {
     color: black;
-}
-
-.slideshow .slick-prev {
-    left: -4vmin;
-}
-
-.slideshow .slick-next {
-    right: -3vmin;
 }
 
 .container {
@@ -22,14 +13,13 @@
     background-color: rgb(100, 100, 100);
 }
 
-.container img {
+.container img, .container video {
     width: 100%;
 }
 
 .image-content {
     position: absolute;
-    display: block;
-    top: 4vw;
+    top: 5%;
     width: 75%;
     margin: 0 12.5%;
 }
@@ -37,7 +27,8 @@
 .image-content p {
     opacity: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 150%;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
@@ -45,16 +36,16 @@
 }
 
 .image-content a {
-    display: block;
+    display: flex;
+    justify-content: center;
     opacity: 0;
     color: white;
-    background-color: transparent;
     border: 1px solid white;
     border-radius: 50%;
-    width: 5vmax;
-    height: 5vmax;
-    top: 75%;
+    width: 2.5vmax;
+    height: 2.5vmax;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .image-content a:hover {
@@ -62,29 +53,26 @@
 }
 
 .fa-instagram {
-    font-size: 3vmax;
+    font-size: 1.5vmax;
     position: relative;
-    width: 60%;
-    height: 60%;
-    top: 21%;
-    left: 24%;
+    display: flex;
+    align-items: center;
 }
 
 .fa-youtube {
-    font-size: 3vmax;
+    font-size: 1.5vmax;
     position: relative;
-    width: 60%;
-    height: 60%;
-    top: 20%;
-    left: 16%;
+    display: flex;
+    align-items: center;
 }
 
 .container:hover > .image-content p, .container:hover > .image-content a {
     animation: fadein 1s linear forwards;
 }
 
-.container:hover > img {
+.container:hover > img, .container:hover > video {
     animation: fadeout 1s linear forwards;
+    
 }
 
 @keyframes fadein {
@@ -97,3 +85,8 @@
     to {opacity: 0.2;}
 }
 
+@media (max-width: 750px) {
+    .image-content p {
+        font-size: 10px;
+    }
+}
