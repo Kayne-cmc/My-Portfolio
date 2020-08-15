@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Skateboarding from "./images/Skateboarding.mov";
-import Projects from "./images/Project-picture.png";
-import Welding from "./images/Welding.jpg";
+import AnimalClimber from "./images/AnimalClimber.mov";
+import EscapeTheCave from "./images/EscapeTheCave.mov";
 
 function Slideshow() {
   let settings = {
@@ -15,8 +15,7 @@ function Slideshow() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    // autoplaySpeed: 2500,
-    autoplaySpeed: 340000,
+    autoplaySpeed: 335000,
     pauseOnHover: true,
     className: "slider",
   };
@@ -37,8 +36,7 @@ function Slideshow() {
           </div>
         </div>
         <div className="container">
-          <video src={Skateboarding} autoPlay loop muted>Video not supported</video>
-          {/* <img src={Projects} /> */}
+          <video src={AnimalClimber} autoPlay loop muted>Video not supported</video>
           <div className="image-content">
             <p>
               Tasked with designing and building a prototype for a children's toy, my group and I at the University of Waterloo 3D printed parts to attach to a wind up boxWorking with 3D printing, my group and I printed parts to create a
@@ -51,11 +49,10 @@ function Slideshow() {
           </div>
         </div>
         <div className="container">
-          <video src={Skateboarding} autoPlay loop muted>Video not supported</video>
-          {/* <img src={Welding} /> */}
+          <video src={EscapeTheCave} autoPlay loop muted style={{}}>Video not supported</video>
           <div className="image-content">
             <p>
-              Using Android Studios, I created my very first mobile app. This game, called Escape the Cave, is a simple record game that involves jumping from platform to platform, and dodging rocks that are falling 
+              Escape The Cave! My very first personal coding project. Using Android Studios, I created my very first mobile app. This game, called Escape the Cave, is a simple record game that involves jumping from platform to platform, and dodging rocks that are falling 
             </p>
             <a
               className="youtube"

@@ -14,7 +14,7 @@ function Nav() {
                         <label for="menucheck" className="menu"><i className="fas fa-bars"></i></label>
                         <ul>
                             <li>
-                                <Link to="/">About Me</Link>
+                                <a href="#">About Me</a>
                             </li>
                             <li><a href={Resume} target="blank">Resume</a></li>
                             <li>Contact<i className="fas fa-caret-down"></i>

@@ -13,8 +13,11 @@
     background-color: rgb(100, 100, 100);
 }
 
-.container img, .container video {
+.container video {
     width: 100%;
+    animation: ease-in-out;
+    transition-delay: 5s;
+    animation: videofadein 1s;
 }
 
 .image-content {
@@ -22,10 +25,11 @@
     top: 5%;
     width: 75%;
     margin: 0 12.5%;
+    opacity: 0;
+    animation: contentfadeout 1s;
 }
 
 .image-content p {
-    opacity: 0;
     width: 100%;
     font-size: 18px;
     line-height: 150%;
@@ -33,12 +37,13 @@
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     margin-bottom: 1vh;
+    animation: ease-in-out;
+    transition-delay: 5s;
 }
 
 .image-content a {
     display: flex;
     justify-content: center;
-    opacity: 0;
     color: white;
     border: 1px solid white;
     border-radius: 50%;
@@ -66,23 +71,32 @@
     align-items: center;
 }
 
-.container:hover > .image-content p, .container:hover > .image-content a {
-    animation: fadein 1s linear forwards;
+.container:hover > .image-content {
+    animation: contentfadein 1s ease-in-out forwards 0s;
 }
 
-.container:hover > img, .container:hover > video {
-    animation: fadeout 1s linear forwards;
-    
+.container:hover > video {
+    animation: videofadeout 1s ease-in-out forwards 0s;
 }
 
-@keyframes fadein {
+@keyframes contentfadein {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+@keyframes contentfadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
   
-@keyframes fadeout {
+@keyframes videofadeout {
     from {opacity: 1;}
     to {opacity: 0.2;}
+}
+
+@keyframes videofadein {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
 }
 
 @media (max-width: 750px) {
