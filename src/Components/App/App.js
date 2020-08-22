@@ -16,7 +16,7 @@ function App() {
       <div>
         <h1 className="header">My story, my goals</h1>
         <p className="description text">
-         Ever since I was a kid, I have always been interested in how things worked. Whether it's at school or just my own curiosity, I always seek answers to the unknown. Growing up, I watched my dad's creativity unfold in his own projects as he was always building something new and aspired to be creative like him. Taking technological design classes at my high school to improve my and starting my own projects, I have been working towards becoming an innovator. Now as a future engineer, I still hold the same goal I had as a child - to create amazing things that help others.
+         Ever since I was a kid, I have always been interested in how things worked. Whether it's at school or just my own curios thoughts, I always seek answers that follow logic. Growing up in Richmond Hill, I watched my dad's creativity unfold in his own personal projects. He was always building something new and I always aspired to be creative like him. I started taking technological design classes at my high school to improve my practical skills and created some of my own personal projects. Now as a future engineer, I still hold the same goal that I had as a child - to create amazing things that help others.
         </p>
       </div>
     </div>

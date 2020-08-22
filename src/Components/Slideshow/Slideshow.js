@@ -24,10 +24,10 @@ function Slideshow() {
     <div className="Slideshow">
       <Slider {...settings}>
         <div className="container">
-          <video src={Skateboarding} autoPlay loop muted>Video not supported</video>
+          <video src={Skateboarding} playsinline autoPlay loop muted>Video not supported</video>
           <div className="image-content">
             <p>
-              One of my earliest memories as a kid was learning to ride a skateboard. It has been one of the most influencial aspects in my life and has changed my perspective on learning. To me, skateboarding is more than a hobby. Challenges only push me to work harder and skateboarding has been a demonstration of that. I keep track of my skateboarding progress on my instagram page.
+              My first memories as a kid was learning to ride a skateboard for the very first time. Skateboarding has been one of the most influencial aspects in my life and has changed my perspective on learning. To me, it is more than just a hobby. Challenges only push me to work harder and this passion has been a demonstration of that. I keep track of my skateboarding progress on my instagram page.
             </p>
             <a href="https://www.instagram.com/kayne.skates/"
               target="blank">
@@ -36,11 +36,10 @@ function Slideshow() {
           </div>
         </div>
         <div className="container">
-          <video src={AnimalClimber} autoPlay loop muted>Video not supported</video>
+          <video src={AnimalClimber} playsinline autoPlay loop muted>Video not supported</video>
           <div className="image-content">
             <p>
-              Tasked with designing and building a prototype for a children's toy, my group and I at the University of Waterloo 3D printed parts to attach to a wind up boxWorking with 3D printing, my group and I printed parts to create a
-              wind up climbing toy
+              Tasked with designing and building a prototype for a toy directed to a certain age group, my team and I at the University of Waterloo came up with the Animal Climber. Using CADing software we designed and 3D printed multiple parts to attach to a wind up box. I was able to experience the engineering design process from scratch.
             </p>
             <a href="https://youtu.be/b8q1SQjiZmA"
               target="blank">
@@ -49,7 +48,7 @@ function Slideshow() {
           </div>
         </div>
         <div className="container">
-          <video src={EscapeTheCave} autoPlay loop muted style={{}}>Video not supported</video>
+          <video src={EscapeTheCave} playsinline autoPlay loop muted style={{}}>Video not supported</video>
           <div className="image-content">
             <p>
               Escape The Cave! My very first personal coding project. Using Android Studios, I created my very first mobile app. This game, called Escape the Cave, is a simple record game that involves jumping from platform to platform, and dodging rocks that are falling 
@@ -59,7 +58,7 @@ function Slideshow() {
               href="https://youtu.be/Od4rgrqviLM"
               target="blank"
             >
-              <i className="fab fa-youtube"></i>
+              <i class="fab fa-github github"></i>
             </a>
           </div>
         </div>

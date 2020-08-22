@@ -57,14 +57,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.fa-instagram {
-    font-size: 1.5vmax;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.fa-youtube {
+.fa-instagram, .fa-youtube, .github {
     font-size: 1.5vmax;
     position: relative;
     display: flex;
