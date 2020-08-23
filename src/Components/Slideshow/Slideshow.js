@@ -24,7 +24,7 @@ function Slideshow() {
     <div className="Slideshow">
       <Slider {...settings}>
         <div className="container">
-          <video src={Skateboarding} playsinline autoPlay loop muted>Video not supported</video>
+          <video autoPlay loop muted playsinline src={Skateboarding}>Video not supported</video>
           <div className="image-content">
             <p>
               My first memories as a kid was learning to ride a skateboard for the very first time. Skateboarding has been one of the most influencial aspects in my life and has changed my perspective on learning. To me, it is more than just a hobby. Challenges only push me to work harder and this passion has been a demonstration of that. I keep track of my skateboarding progress on my instagram page.
@@ -36,7 +36,7 @@ function Slideshow() {
           </div>
         </div>
         <div className="container">
-          <video src={AnimalClimber} playsinline autoPlay loop muted>Video not supported</video>
+          <video autoPlay loop muted playsinline src={AnimalClimber}>Video not supported</video>
           <div className="image-content">
             <p>
               Tasked with designing and building a prototype for a toy directed to a certain age group, my team and I at the University of Waterloo came up with the Animal Climber. Using CADing software we designed and 3D printed multiple parts to attach to a wind up box. I was able to experience the engineering design process from scratch.
@@ -48,7 +48,7 @@ function Slideshow() {
           </div>
         </div>
         <div className="container">
-          <video src={EscapeTheCave} playsinline autoPlay loop muted style={{}}>Video not supported</video>
+          <video autoPlay loop muted playsinline src={EscapeTheCave}>Video not supported</video>
           <div className="image-content">
             <p>
               Escape The Cave! My very first personal coding project. Using Android Studios, I created my very first mobile app. This game, called Escape the Cave, is a simple record game that involves jumping from platform to platform, and dodging rocks that are falling 
