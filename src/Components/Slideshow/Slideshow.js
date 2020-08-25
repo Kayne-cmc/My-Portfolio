@@ -15,7 +15,7 @@ function Slideshow() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 335000,
+    autoplaySpeed: 3350,
     pauseOnHover: true,
     className: "slider",
   };
