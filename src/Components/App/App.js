@@ -5,7 +5,7 @@ import Testphoto from './Testphoto.jpg';
 function App() {
   return (
     <div className="App">
-      <div className="opening">
+      <div className="opening" id="aboutme">
         <img className="portrait" src={Testphoto} alt="Portrait" />
         <div className="opening-text">
           <h1 className="header animate__animated animate__fadeInRight">Hi, I'm Kayne</h1>

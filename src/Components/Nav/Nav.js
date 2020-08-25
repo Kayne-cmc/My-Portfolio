@@ -9,12 +9,12 @@ function Nav() {
             <Router>
                 <div>
                     <nav>
-                        <a className="title" href="./">Kayne Chu </a>
+                        <a className="title" href="/">Kayne Chu </a>
                         <input type="checkbox" id="menucheck"></input>
                         <label for="menucheck" className="menu"><i className="fas fa-bars"></i></label>
                         <ul>
                             <li>
-                                <a href="#">About Me</a>
+                                <a href="#aboutme">About Me</a>
                             </li>
                             <li><a href={Resume} target="blank">Resume</a></li>
                             <li>Contact<i className="fas fa-caret-down"></i>

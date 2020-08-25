@@ -22,7 +22,7 @@
 
 .image-content {
     position: absolute;
-    top: 5%;
+    top: 0%;
     width: 75%;
     margin: 0 12.5%;
     opacity: 0;
@@ -31,7 +31,7 @@
 
 .image-content p {
     width: 100%;
-    font-size: 18px;
+    font-size: 1.5vmin;
     line-height: 150%;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -92,8 +92,8 @@
     to {opacity: 1;}
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     .image-content p {
         font-size: 10px;
     }
-}
+} */
