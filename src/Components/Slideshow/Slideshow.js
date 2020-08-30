@@ -51,7 +51,7 @@ function Slideshow() {
           <video autoPlay loop muted playsInline src={EscapeTheCave}>Video not supported</video>
           <div className="image-content">
             <p>
-              Escape The Cave! My very first personal coding project. Using Android Studios, I created my very first mobile app. This game, called Escape the Cave, is a simple record game that involves jumping from platform to platform, and dodging rocks that are falling 
+              Escape The Cave! - My very first personal coding project. After learning the Java programming language, I used Android Studios to create a mobile application. This game is a simple high score game that involves jumping from platform to platform while dodging falling obstacles.
             </p>
             <a
               className="youtube"

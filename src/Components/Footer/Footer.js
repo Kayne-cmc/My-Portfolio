@@ -7,7 +7,7 @@ function Footer() {
         <div className="Footer">
             <ScrollAnimation animateIn="animate__animated animate__fadeInUp" duration="0.5">
                 <h1 id="bottom-header" className="header">Get in Touch</h1>
-                <p className="conclusion text">Whether it's for new career opportunities or just to introduce yourself, I love meeting new people and I'm always looking to make new connections. Get in touch with me and we can set something up!</p>
+                <p className="conclusion text">Whether it's new career opportunities or just to introduce yourself, I love meeting new people and I'm always looking to make new connections. Get in touch with me and we can set something up!</p>
             
                 <div className="contact">
                     <ul>
