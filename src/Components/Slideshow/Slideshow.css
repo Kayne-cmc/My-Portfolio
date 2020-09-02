@@ -40,7 +40,8 @@
     line-height: 150%;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    text-align: justify;
+    text-align-last: center;
     margin-bottom: 10px;
     animation: ease-in-out;
     transition-delay: 5s;

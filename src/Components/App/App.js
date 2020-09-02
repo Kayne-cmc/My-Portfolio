@@ -15,8 +15,8 @@ function App() {
       
       <div>
         <h1 className="header">My story, my goals</h1>
-        <p className="description text" style={{paddingBottom: 0}}>
-         Ever since I was a kid, I have always been interested in how things worked. Whether it's at school or just my own curious thoughts, I always seek logical answers to my questions. This way of thinking has led me to my love for math and science.
+        <p className="description text" style={{paddingBottom: '0px'}}>
+         Ever since I was a kid, I have always been interested in how things worked. Whether it's at school or just my own curious thoughts, I always seek logical answers to my questions. This way of thinking has led me to my love for math and science and my pursuit to study mechanical engineering.
         </p>
         <p className="description text" style={{marginTop: 0}}>
           Growing up in Richmond Hill, I watched my dad's creativity unfold in his own personal projects. He was always building something new and I always aspired to be creative like him. I started taking technological design classes at my high school to improve my practical skills and created some of my own personal projects in my spare time. Now as a future mechanical engineer, I still hold the same goal that I had as a child - to create amazing things that help others.

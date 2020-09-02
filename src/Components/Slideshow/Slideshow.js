@@ -39,7 +39,7 @@ function Slideshow() {
           <video autoPlay loop muted playsInline src={AnimalClimber}>Video not supported</video>
           <div className="image-content">
             <p>
-              Tasked with designing and building a prototype for a toy directed to a certain age group, my team and I at the University of Waterloo came up with the Animal Climber. Using CADing software we designed and 3D printed multiple parts to attach to a wind up box. I was able to experience the engineering design process from scratch.
+              At the University of Waterloo, my classmates and I experienced the engineering design process as we created the Animal Climber - a wind up toy for children that travels across a straight track. Using SolidWorks we designed and 3D printed multiple parts to create arms that fit onto a wind up box. Our toy was presented in a symposium with everyone else's creations.
             </p>
             <a href="https://youtu.be/b8q1SQjiZmA"
               target="blank">
@@ -51,11 +51,11 @@ function Slideshow() {
           <video autoPlay loop muted playsInline src={EscapeTheCave}>Video not supported</video>
           <div className="image-content">
             <p>
-              Escape The Cave! - My very first personal coding project. After learning the Java programming language, I used Android Studios to create a mobile application. This game is a simple high score game that involves jumping from platform to platform while dodging falling obstacles.
+              Escape The Cave! - My very first personal coding project. After learning the Java programming language, I used Android Studios to create me first mobile application. This application is a simple high score game that involves jumping from platform to platform while dodging falling obstacles.
             </p>
             <a
               className="youtube"
-              href="https://youtu.be/Od4rgrqviLM"
+              href="https://github.com/Kayne-cmc/first-android-app"
               target="blank"
             >
               <i class="fab fa-github github"></i>
