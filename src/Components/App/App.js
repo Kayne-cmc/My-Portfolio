@@ -9,7 +9,7 @@ function App() {
         <img className="portrait" src={Testphoto} alt="Portrait" />
         <div className="opening-text">
           <h1 className="header animate__animated animate__fadeInRight">Hi, I'm Kayne</h1>
-          <p style={{paddingBottom: 0}} className="text introduction">I am a 2A Mechanical Engineering student at the University of Waterloo. I love a nice relaxing day of coding or skateboarding but most of all, I love learning new things and teaching others! From working with younger students in the after school tutoring program at my high school to becoming a self-employed math tutor, I have a developed a passion for helping others learn and succeed in their careers.</p>
+          <p style={{paddingBottom: 0}} className="text introduction">I am a 2A Mechanical Engineering student at the University of Waterloo. I love a nice relaxing day of coding or skateboarding but most of all, I love learning new things and teaching others! From working with younger students in the after school tutoring program at my high school to becoming a self-employed math tutor, I have developed a passion for helping others learn and succeed in their careers.</p>
         </div>
       </div>
       
