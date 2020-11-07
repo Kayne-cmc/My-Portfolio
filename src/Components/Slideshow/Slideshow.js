@@ -24,18 +24,6 @@ function Slideshow() {
     <div className="Slideshow">
       <Slider {...settings}>
         <div className="container">
-          <video autoPlay loop muted playsInline src={Skateboarding}>Video not supported</video>
-          <div className="image-content">
-            <p>
-              My first memory as a kid was learning to ride a skateboard for the very first time. Skateboarding has been one of the most influencial aspects in my life and has changed my perspective on learning. To me, it is more than just a hobby. Challenges only push me to work harder and that passion has been a demonstration of this. I keep track of my skateboarding progress on my instagram page.
-            </p>
-            <a href="https://www.instagram.com/kayne.skates/"
-              target="blank">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-        <div className="container">
           <video autoPlay loop muted playsInline src={AnimalClimber}>Video not supported</video>
           <div className="image-content">
             <p>
@@ -59,6 +47,18 @@ function Slideshow() {
               target="blank"
             >
               <i class="fab fa-github github"></i>
+            </a>
+          </div>
+        </div>
+        <div className="container">
+          <video autoPlay loop muted playsInline src={Skateboarding}>Video not supported</video>
+          <div className="image-content">
+            <p>
+              My first memory as a kid was learning to ride a skateboard for the very first time. Skateboarding has been one of the most influencial aspects in my life and has changed my perspective on learning. To me, it is more than just a hobby. Challenges only push me to work harder and that passion has been a demonstration of this. I keep track of my skateboarding progress on my instagram page.
+            </p>
+            <a href="https://www.instagram.com/kayne.skates/"
+              target="blank">
+              <i className="fab fa-instagram"></i>
             </a>
           </div>
         </div>
