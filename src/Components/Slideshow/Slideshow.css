@@ -55,7 +55,6 @@
     border-radius: 50%;
     width: 4vmin;
     height: 4vmin;
-    margin: 0 auto;
     text-decoration: none;
 }
 
@@ -68,7 +67,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 15%;
 }
 
 .container:hover > .image-content {
