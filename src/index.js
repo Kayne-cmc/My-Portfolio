@@ -1,20 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import * as serviceWorker from './serviceWorker';
-import App from './Components/App/App';
-import Slideshow from './Components/Slideshow/Slideshow';
-import Nav from './Components/Nav/Nav';
-import Footer from './Components/Footer/Footer';
+import {BrowserRouter as Router} from 'react-router-dom'
+import App from './App';
+import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Nav />
+  <Router>
     <App />
-    <Slideshow />
-    <Footer />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Router>
+  , document.getElementById('root')
 );
 
 serviceWorker.unregister();

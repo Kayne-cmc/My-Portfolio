@@ -1,0 +1,205 @@
+.filler {
+  overflow: hidden;
+}
+
+.Footer {
+  background:rgb(20,20,20);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-content:center;
+  grid-area: 1/1/1/1;
+}
+
+.bottom-header {
+  text-align: left;
+  margin: 0;
+  margin-top: 0.67em;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.1em solid white;
+  font-size: 35px;
+  font-family:  'Cutive Mono', monospace;
+  color: rgb(137, 169, 197);
+  animation: blinking 0.5s step-end infinite;
+}
+
+.conclusion {
+  width: 80%;
+  margin: 0.5em 5vw;
+  text-align: left;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.contact {
+  width: 100%;
+  height: 80px;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact ul li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  padding: 10px 0;
+}
+
+.divider {
+  height: 45px;
+  width: 2px;
+  background: rgb(137,169,197);
+  margin: 0 10px;
+}
+
+.contact ul li:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.2s;
+}
+
+.contact a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.contact i {
+  font-size: 40px;
+  line-height: 40px;
+  color: white;
+  float: right;
+}
+
+.footer-right {
+  grid-area:1/2/1/2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 80%;
+}
+
+input[type=text], form textarea {
+  border: 3px solid rgb(137, 169, 197);
+  padding: 1%;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  margin: 5px 0;
+  width: 100%;
+  resize: none;
+}
+
+input[type=submit] {
+  border: 3px solid rgb(137, 169, 197);
+  font-size: 14px;
+  border-radius: 10%;
+}
+
+input[type=submit]:hover {
+  background: rgb(137, 169, 197);
+  transition: 0.5s;
+}
+
+form textarea {
+  height: 120px;
+  width: 100%;
+}
+
+.input input[type=text] {
+  padding-left: 36px;
+  width: 100%;
+  margin-right: 15px;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 33.33%;
+}
+
+.forminput {
+  display: flex;
+  width: 100%;
+}
+
+.input i {
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.submitMessage {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .Footer {
+    display: block;
+  }
+
+  .footer-left, .footer-right {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #bottom-header, .conclusion {
+    padding: 0;
+    width: 100%;
+  }
+
+  #bottom-header {
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  from, to {border-color: transparent;}
+  50% {border-color: white;}
+}
+
+[data-aos='typing'] {
+  width: 0;
+  &.aos-animate {
+    width: 100%;
+  }
+}
+
+[data-aos] {
+  body[data-aos-easing='typing'] &,
+  &[data-aos][data-aos-easing='typing'] {
+    transition-timing-function: steps(12, end);
+  }
+}
