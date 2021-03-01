@@ -98,7 +98,7 @@ form {
 }
 
 input[type=text], form textarea {
-  border: 3px solid rgb(137, 169, 197);
+  border: 2px solid rgb(137,169,197);
   padding: 1%;
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -109,14 +109,18 @@ input[type=text], form textarea {
 }
 
 input[type=submit] {
-  border: 3px solid rgb(137, 169, 197);
+  width: 250px;
+  height: 40px;
+  border: 2px solid rgb(137,169,197);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   font-size: 14px;
-  border-radius: 10%;
 }
 
 input[type=submit]:hover {
-  background: rgb(137, 169, 197);
-  transition: 0.5s;
+  background: linear-gradient(315deg, grey, rgb(20,20,20));
+  color: white;
+  transition: color 0.75s cubic-bezier(0,0.75,0.2,1);
 }
 
 form textarea {
@@ -161,10 +165,12 @@ form textarea {
 @media (max-width: 900px) {
   .Footer {
     display: block;
+    width: 100vw;
+    padding-bottom: 20px;
   }
 
   .footer-left, .footer-right {
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;

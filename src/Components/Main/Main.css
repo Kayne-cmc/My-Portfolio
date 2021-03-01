@@ -12,7 +12,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
-  background: rgb(20,20,20);
+  background: white;
 }
 
 .opening {
@@ -74,24 +74,16 @@ body {
 }
 
 .skill-container {
-  width: 300px;
+  width: 275px;
   height: 150px;
   margin: 15px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   box-sizing: border-box;
   border: 5px solid rgb(137,169,197);
   border-radius: 15px;
-}
-
-.square {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  border: 2px solid black;
-  border-radius: 50%;
 }
 
 .skills i, .skills img {
@@ -102,31 +94,15 @@ body {
   width: 80px;
   height: 80px;
   padding: 0.1em;
-  margin-left: 0.3em;
   border: 2px solid black;
   border-radius: 50%;
 }
 
-.information {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.information p {
-  text-align: center;
-}
-
-#clock {
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
-  border: none;
-}
-
 .skills p {
-  width: 100%;
+  width: 80%;
+  margin: 0;
   text-align: center;
-  margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 1050px) {
@@ -143,6 +119,10 @@ body {
 @media (max-width: 955px) {
   .hello {
     font-size: 75px;
+  }
+
+  .opening-text {
+    top: 20%;
   }
 }
 

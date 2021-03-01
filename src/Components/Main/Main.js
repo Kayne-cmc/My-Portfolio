@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import "aos/dist/aos.css";
 import "./Main.css";
@@ -13,7 +13,7 @@ function Main() {
     <div className="Main">
       <Nav />
       <div className="opening">
-        <img className="portrait" src={Testphoto} alt="Portrait" />
+        <img className="portrait animate__animated animate__fadeIn" src={Testphoto} alt="Portrait"/>
         <div className="opening-text">
           <h1
             className="page-title animate__animated animate__fadeInRight"
@@ -33,8 +33,8 @@ function Main() {
       <div id="introduction">
         <h1 className="header">A Little Bit About Myself. . .</h1>
         <p className="text">
-          I am a 2A Mechanical Engineering student at the University of
-          Waterloo. I love a nice relaxing day of coding or skateboarding but
+          I am a 2B Mechanical Engineering student at the University of
+          Waterloo. I love a nice relaxing day of coding or skateboarding (Check out my skateboarding page <a href="https://www.instagram.com/kayne.skates/" target="blank" style={{color: 'rgb(137,169,197)',textDecoration: 'none', fontWeight: 'bold'}} >here</a>!) but
           most of all, I love learning new things and teaching others! From
           working with younger students in the after school tutoring program at
           my high school to becoming a self-employed math tutor, I have
@@ -60,7 +60,7 @@ function Main() {
         </p>
       </div>
 
-      <div className="skills" id="trigger-skills">
+      <div className="skills">
         <div
           className="skill-container"
           data-aos="flip-up"
@@ -68,40 +68,24 @@ function Main() {
           data-aos-anchor-placement="center-bottom"
         >
           <i className="fa fa-code" />
-          <div className="information">
-            <p>HTML, CSS, REACTJS, C++</p>
-            <i className="far fa-clock" id="clock"></i>
-          </div>
+          <p>HTML, CSS, REACTJS, C++</p>
         </div>
 
         <div
           className="skill-container"
           data-aos="flip-up"
-          data-aos-delay="250"
+          data-aos-delay="200"
           data-aos-anchor=".skills"
           data-aos-anchor-placement="center-bottom"
         >
           <i className="far fa-file-excel" />
-          <div className="information">
-            <p>Microsoft Excel, VBA</p>
-          </div>
+          <p>Microsoft Excel, VBA</p>
         </div>
 
         <div
           className="skill-container"
           data-aos="flip-up"
-          data-aos-delay="500"
-          data-aos-anchor=".skills"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <i className="far fa-calendar-alt" />
-          {/* <p>Time Management</p> */}
-        </div>
-
-        <div
-          className="skill-container"
-          data-aos="flip-up"
-          data-aos-delay="750"
+          data-aos-delay="600"
           data-aos-anchor=".skills"
           data-aos-anchor-placement="center-bottom"
         >
@@ -112,11 +96,12 @@ function Main() {
         <div
           className="skill-container"
           data-aos="flip-up"
-          data-aos-delay="1000"
+          data-aos-delay="800"
           data-aos-anchor=".skills"
           data-aos-anchor-placement="center-bottom"
         >
           <img src={Arduino} alt="Arduino"></img>
+          <p>Arduino</p>
         </div>
       </div>
 

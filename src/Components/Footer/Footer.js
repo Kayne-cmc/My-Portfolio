@@ -123,7 +123,7 @@ function Footer() {
           </div>
             <input type="text" name="subject" placeholder="Subject"/><br></br>
             <textarea type="text" name="message" placeholder="Hey! What's up" onChange={(e) => {setMessage(e.target.value);}}/><br></br>
-          <input type="submit" value="Submit" onClick={(e) => validateForm()}/>
+          <input type="submit" value="Send Message" onClick={(e) => validateForm()}/>
           <h1 className="submitMessage" style={{color: submitColor}}>{submitMessage}</h1>
         </form>
       </div>

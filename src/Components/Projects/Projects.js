@@ -9,6 +9,8 @@ import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import Animalclimber from "../images/AnimalClimber.mov";
 import Escapethecave from "../images/EscapeTheCave.mov";
+import Hyperloop from "../images/HyperLoop.mp4";
+import Batterybox from "../images/BatteryBox.mp4"
 import AnimalClimber from "../images/AnimalClimber.png";
 import EscapeTheCave from "../images/EscapeTheCave.png";
 import HyperLoop from "../images/HyperLoop.png";
@@ -93,7 +95,7 @@ function Projects() {
           loop
           muted
           playsInline
-          src={Animalclimber}
+          src={Hyperloop}
           data-aos="fade-left"
           data-aos-anchor-placement="center-bottom"
         >
@@ -138,15 +140,11 @@ function Projects() {
         >
           <h2 className="left-header header">Module Supports</h2>
           <p className="text">
-            Escape The Cave! - My very first personal coding project. After
-            learning the Java programming language, I used Android Studios to
-            create my first mobile application. This application is a simple
-            high score game that involves jumping from platform to platform
-            while dodging falling obstacles.
+            As a member of the University of Waterloo Midnight Sun solar car team, I was given the opportunity to design various parts for the Battery box subteam. Using Solidworks, I designed a module support to prevent the battery modules from moving when the car was operating.
           </p>
           <a
             className="link"
-            href="https://github.com/Kayne-cmc/first-android-app"
+            href="https://www.uwmidsun.com/"
             target="blank"
           >
             LEARN MORE
@@ -157,7 +155,7 @@ function Projects() {
           loop
           muted
           playsInline
-          src={Escapethecave}
+          src={Batterybox}
           data-aos="fade-right"
           data-aos-anchor-placement="center-bottom"
         >
@@ -174,7 +172,7 @@ function Projects() {
           loop
           muted
           playsInline
-          src={Escapethecave}
+          src={Animalclimber}
           data-aos="fade-left"
           data-aos-anchor-placement="center-bottom"
         >
@@ -185,7 +183,7 @@ function Projects() {
           data-aos="fade-right"
           data-aos-anchor-placement="center-bottom"
         >
-          <h2 className="right-header header">Escape The Cave</h2>
+          <h2 className="right-header header">The Animal Climber</h2>
           <p className="text">
             Escape The Cave! - My very first personal coding project. After
             learning the Java programming language, I used Android Studios to
@@ -195,7 +193,7 @@ function Projects() {
           </p>
           <a
             className="link"
-            href="https://github.com/Kayne-cmc/first-android-app"
+            href="https://youtu.be/b8q1SQjiZmA"
             target="blank"
           >
             LEARN MORE
