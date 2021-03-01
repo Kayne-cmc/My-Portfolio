@@ -34,8 +34,7 @@
   text-align: left;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
-  text-align: justify;
-  text-align-last: center;
+  text-align: center;
 }
 
 .contact {
@@ -95,6 +94,9 @@
 
 form {
   width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 input[type=text], form textarea {
@@ -115,6 +117,7 @@ input[type=submit] {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 14px;
+  margin-top: 15px;
 }
 
 input[type=submit]:hover {
