@@ -6,7 +6,7 @@ import Nav from "../Nav/Nav";
 import Testphoto from "../images/Portrait.jpg";
 import Footer from "../Footer/Footer";
 import Solidworks from "../images/Solidworks.png";
-import Arduino from "../images/Arduino.png";
+import Arduino from "../images/Arduino.jpg";
 
 function Main() {
   return (
@@ -21,7 +21,7 @@ function Main() {
           >
             Hi, I'm Kayne
           </h1>
-          <Link to="introduction" className="arrow">
+          <Link className="arrow" onClick={() => {window.scrollBy(0,window.innerHeight);}}>
             <i
               className="fas fa-chevron-down"
               style={{ color: "rgb(255,190,210)" }}

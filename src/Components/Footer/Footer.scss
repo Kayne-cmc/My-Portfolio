@@ -99,6 +99,10 @@ form {
   justify-content: center;
 }
 
+input {
+  border-radius: 0;
+}
+
 input[type=text], form textarea {
   border: 2px solid rgb(137,169,197);
   padding: 1%;

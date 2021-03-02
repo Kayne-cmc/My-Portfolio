@@ -64,7 +64,8 @@
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 40px;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 200px 100%, 20% 100%);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  width: fit-content;
 }
   
 .menu {
@@ -195,7 +196,11 @@ nav ul li:hover > ul li:nth-child(3) {
     font-size: 12px;
   }
   .menu {
-    margin: 0;
+    margin-right: 20px;
+  }
+  .title {
+    font-size: 30px;
+    padding: 0 30px;
   }
 }
 

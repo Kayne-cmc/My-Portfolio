@@ -96,17 +96,18 @@ function Projects() {
           muted
           playsInline
           src={Hyperloop}
+          className="left"
           data-aos="fade-left"
           data-aos-anchor-placement="center-bottom"
         >
           Video not supported
         </video>
         <div
-          className="image-content"
+          className="right image-content"
           data-aos="fade-right"
           data-aos-anchor-placement="center-bottom"
         >
-          <h1 className="right-header header">The aCADemics HyperLoop</h1>
+          <h1 className="header">The aCADemics HyperLoop</h1>
           <p className="text">
             During my second year as a student at the University of Waterloo, I
             had the privilege of participating in the McMaster CAD Designathon
@@ -133,12 +134,24 @@ function Projects() {
       </Link>
 
       <div className="container" id="second">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          src={Batterybox}
+          className="right"
+          data-aos="fade-right"
+          data-aos-anchor-placement="center-bottom"
+        >
+          Video not supported
+        </video>
         <div
-          className="image-content"
+          className="left image-content"
           data-aos="fade-left"
           data-aos-anchor-placement="center-bottom"
         >
-          <h2 className="left-header header">Module Supports</h2>
+          <h2 className="header">Module Supports</h2>
           <p className="text">
             As a member of the University of Waterloo Midnight Sun solar car team, I was given the opportunity to design various parts for the Battery box subteam. Using Solidworks, I designed a module support to prevent the battery modules from moving when the car was operating.
           </p>
@@ -150,17 +163,6 @@ function Projects() {
             LEARN MORE
           </a>
         </div>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          src={Batterybox}
-          data-aos="fade-right"
-          data-aos-anchor-placement="center-bottom"
-        >
-          Video not supported
-        </video>
       </div>
       <Link to="third" className="arrow">
         <i className="fas fa-chevron-down"></i>
@@ -173,17 +175,18 @@ function Projects() {
           muted
           playsInline
           src={Animalclimber}
+          className="left"
           data-aos="fade-left"
           data-aos-anchor-placement="center-bottom"
         >
           Video not supported
         </video>
         <div
-          className="image-content"
+          className="right image-content"
           data-aos="fade-right"
           data-aos-anchor-placement="center-bottom"
         >
-          <h2 className="right-header header">The Animal Climber</h2>
+          <h2 className="header">The Animal Climber</h2>
           <p className="text">
             Escape The Cave! - My very first personal coding project. After
             learning the Java programming language, I used Android Studios to
@@ -205,12 +208,24 @@ function Projects() {
       </Link>
 
       <div className="container" id="last">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          src={Escapethecave}
+          className="right"
+          data-aos="fade-right"
+          data-aos-anchor-placement="center-bottom"
+        >
+          Video not supported
+        </video>
         <div
-          className="image-content"
+          className="left image-content"
           data-aos="fade-left"
           data-aos-anchor-placement="center-bottom"
         >
-          <h2 className="left-header header">Escape The Cave</h2>
+          <h2 className="header">Escape The Cave</h2>
           <p className="text">
             Escape The Cave! - My very first personal coding project. After
             learning the Java programming language, I used Android Studios to
@@ -226,17 +241,6 @@ function Projects() {
             LEARN MORE
           </a>
         </div>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          src={Escapethecave}
-          data-aos="fade-right"
-          data-aos-anchor-placement="center-bottom"
-        >
-          Video not supported
-        </video>
       </div>
       <Footer />
     </div>
