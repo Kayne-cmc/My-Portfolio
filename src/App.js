@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
@@ -10,14 +11,13 @@ import Projects from './Components/Projects/Projects';
 function App() {
   return (
     <div>
-      <Switch>
-        <Route exact path='/'>
-          {Main}
-        </Route>
-        <Route path='/Projects'>
-          {Projects}
-        </Route>
-      </Switch>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Main}/>
+          <Route path='/Projects' component={Projects} />
+        </Switch>
+      </Router>
+      
     </div>
   )
 }

@@ -9,6 +9,11 @@ import Solidworks from "../images/Solidworks.png";
 import Arduino from "../images/Arduino.jpg";
 
 function Main() {
+
+  useEffect(() => {
+    document.querySelector('html').style.scrollBehavior = 'smooth';
+  }, []);
+
   return (
     <div className="Main">
       <Nav />
@@ -21,7 +26,7 @@ function Main() {
           >
             Hi, I'm Kayne
           </h1>
-          <Link className="arrow" onClick={() => {window.scrollBy(0,window.innerHeight);}}>
+          <Link className="arrow" style={{ fontSize: 30 }} onClick={() => {window.scrollBy(0,window.innerHeight);}}>
             <i
               className="fas fa-chevron-down"
               style={{ color: "rgb(255,190,210)" }}
@@ -30,7 +35,7 @@ function Main() {
         </div>
       </div>
 
-      <div id="introduction">
+      <div className="introduction">
         <h1 className="header">A Little Bit About Myself. . .</h1>
         <p className="text">
           I am a 2B Mechanical Engineering student at the University of

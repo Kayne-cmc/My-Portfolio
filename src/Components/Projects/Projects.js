@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import { Link } from "react-scroll";
 import Slider from "react-slick";
@@ -36,6 +36,11 @@ const images = [
 ];
 
 function Projects() {
+
+  useEffect(() => {
+    document.querySelector('html').style.scrollBehavior = 'smooth';
+  }, []);
+
   const PrevArrow = ({ onClick }) => {
     return (
       <div onClick={onClick} className="prev slide-arrow">
@@ -58,7 +63,6 @@ function Projects() {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2500,
-    centerMode: true,
     lazyLoad: true,
     slidesToScroll: 1,
     centerPadding: 0,

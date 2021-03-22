@@ -1,7 +1,6 @@
-html {
+/* html {
   scroll-behavior: smooth;
-  
-}
+} */
 
 body {
   margin: 0;
@@ -43,9 +42,8 @@ body {
   font-size: 100px;
 }
 
-#introduction {
+.introduction {
   padding-top: 80px;
-  background: white;
 }
 
 .header {

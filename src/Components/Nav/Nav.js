@@ -23,12 +23,12 @@ function Nav() {
           </label>
           <ul className="left-nav">
             <li>
-              <NavLink to="/">
+              <NavLink to="/" onClick={() => {document.querySelector('html').style.removeProperty('scroll-behavior');}}>
                 About Me
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Projects" exact>
+              <NavLink onClick={() => {document.querySelector('html').style.removeProperty('scroll-behavior');}} to="/Projects" exact>
                 Projects
               </NavLink>
             </li>
