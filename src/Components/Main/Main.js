@@ -26,7 +26,7 @@ function Main() {
           >
             Hi, I'm Kayne
           </h1>
-          <Link className="arrow" style={{ fontSize: 30 }} onClick={() => {window.scrollBy(0,window.innerHeight);}}>
+          <Link className="arrow" style={{ fontSize: 30 }} to='/' onClick={() => {window.scrollBy(0,window.innerHeight);}}>
             <i
               className="fas fa-chevron-down"
               style={{ color: "rgb(255,190,210)" }}

@@ -6,12 +6,21 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Footer() {
-  const [submitMessage, setSubmitMessage] = useState('');
+  const [submitMessage, setSubmitMessage] = useState('Please include your name');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
-  const [submitColor, setSubmitColor] = useState('');
+  const [submitColor, setSubmitColor] = useState('red');
+
+  function fadeSubmitMessage() {
+    document.querySelector('.submitMessage').classList.remove('fadeOut');
+    document.querySelector('.submitMessage').classList.add('fadeIn');
+    setTimeout(() => {
+      document.querySelector('.submitMessage').classList.add('fadeOut');
+      document.querySelector('.submitMessage').classList.remove('fadeIn');
+    }, 2000);
+  }
 
   function validateForm() {
     if ((name==='' || email==='' || phone==='' || message==='') || (!validator.isEmail(email))) {
@@ -31,11 +40,13 @@ function Footer() {
         setSubmitMessage('Please enter a valid email address');
       }
       setSubmitColor('red');
+      fadeSubmitMessage();
       return false;
     }
     else {
       setSubmitMessage('Submitted Successfully!');
       setSubmitColor('rgb(137, 169, 197)');
+      fadeSubmitMessage();
       return true;
     }
   }
@@ -50,7 +61,11 @@ function Footer() {
         }, (error) => {
           console.log(error.text);
         });
-        e.target.reset()
+        setName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+        e.target.reset();
     }
   }
 
@@ -122,9 +137,9 @@ function Footer() {
               <i className="fas fa-phone"></i>
             </div>
           </div>
-            <input type="text" name="subject" placeholder="Subject"/><br></br>
+            <input type="text" name="subject" placeholder="Subject"/>
             <textarea type="text" name="message" placeholder="Hey! What's up" onChange={(e) => {setMessage(e.target.value);}}/><br></br>
-          <input type="submit" value="Send Message" onClick={(e) => validateForm()}/>
+          <button onClick={() => validateForm()}>Send Message</button>
           <h1 className="submitMessage" style={{color: submitColor}}>{submitMessage}</h1>
         </form>
       </div>

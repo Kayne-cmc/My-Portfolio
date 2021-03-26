@@ -94,6 +94,7 @@
 
 form {
   width: 80%;
+  margin: 25px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -114,17 +115,17 @@ input[type=text], form textarea {
   resize: none;
 }
 
-input[type=submit] {
+form button {
   width: 250px;
   height: 40px;
   border: 2px solid rgb(137,169,197);
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 14px;
-  margin-top: 15px;
+  margin: 15px 0;
 }
 
-input[type=submit]:hover {
+form button:hover {
   background: linear-gradient(315deg, grey, rgb(20,20,20));
   color: white;
   transition: color 0.75s cubic-bezier(0,0.75,0.2,1);
@@ -164,9 +165,19 @@ form textarea {
 
 .submitMessage {
   text-align: center;
+  width: 100%;
   margin: 0;
+  opacity: 0;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s linear forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s linear forwards;
 }
 
 @media (max-width: 900px) {
@@ -215,4 +226,14 @@ form textarea {
   &[data-aos][data-aos-easing='typing'] {
     transition-timing-function: steps(12, end);
   }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }

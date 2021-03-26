@@ -18,17 +18,21 @@ function Nav() {
           </div>
         </div>
           <input type="checkbox" id="menucheck"></input>
-          <label for="menucheck" className="menu">
+          <label htmlFor="menucheck" className="menu">
             <i className="fas fa-bars"></i>
           </label>
           <ul className="left-nav">
             <li>
-              <NavLink to="/" onClick={() => {document.querySelector('html').style.removeProperty('scroll-behavior');}}>
+              <NavLink to="/" onClick={() => {
+                document.querySelector('html').style.removeProperty('scroll-behavior');
+              }}>
                 About Me
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={() => {document.querySelector('html').style.removeProperty('scroll-behavior');}} to="/Projects" exact>
+              <NavLink to="/Projects" exact onClick={() => {
+                document.querySelector('html').style.removeProperty('scroll-behavior');
+              }}>
                 Projects
               </NavLink>
             </li>

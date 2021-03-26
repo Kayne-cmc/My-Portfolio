@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Projects.css";
 import { Link } from "react-scroll";
 import Slider from "react-slick";
@@ -37,8 +37,32 @@ const images = [
 
 function Projects() {
 
+  const imageRef = useRef();
+  // const [screen, setScreen] = useState({
+  //   width: window.innerWidth,
+  //   height: window.innerHeight
+  // });
+  // let firstLoad = useRef(true);
+
+  // window.onload = () => {
+  //   document.querySelector('.prev').style.height = imageRef.current.clientHeight + 'px';
+  //   document.querySelector('.next').style.height = imageRef.current.clientHeight + 'px';
+  //   firstLoad.current = false;
+  // };
+
+  // window.addEventListener('resize', () => {
+  //   setScreen({
+  //     width: window.innerWidth,
+  //     height: window.innerHeight
+  //   });
+  // });
+
   useEffect(() => {
     document.querySelector('html').style.scrollBehavior = 'smooth';
+    // if(!firstLoad.current) {
+    //   document.querySelector('.prev').style.height = imageRef.current.clientHeight + 'px';
+    //   document.querySelector('.next').style.height = imageRef.current.clientHeight + 'px';
+    // }
   }, []);
 
   const PrevArrow = ({ onClick }) => {
@@ -61,7 +85,7 @@ function Projects() {
     dots: true,
     arrow: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2500,
     lazyLoad: true,
     slidesToScroll: 1,
@@ -80,10 +104,10 @@ function Projects() {
           Projects
         </h1>
         <Slider {...settings}>
-          {images.map((image) => (
-            <div>
+          {images.map((image, index) => (
+            <div key={index}>
               <Link to={image.link}>
-                <img src={image.photo} alt={image.photo} />
+                <img src={image.photo} alt={image.photo} className='slide-image' ref={imageRef} />
               </Link>
             </div>
           ))}
