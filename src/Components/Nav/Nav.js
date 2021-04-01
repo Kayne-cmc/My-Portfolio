@@ -12,7 +12,7 @@ function Nav() {
         <div className="logo">
           <div className="prism">
             <div className="quote front-face">EXPLORE</div>
-            <div className="quote top-face">INNOVATE</div>
+            <div className="quote top-face">DISCOVER</div>
             <div className="quote back-face">CREATE</div>
             <div className="quote bottom-face">REPEAT</div>
           </div>

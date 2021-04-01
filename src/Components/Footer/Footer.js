@@ -80,9 +80,9 @@ function Footer() {
       <div className="footer-left">
         <div style={{marginLeft: '5vw'}}>
           <h1 className="bottom-header"
-          data-aos="typing"
-          data-aos-duration="1500"
-          data-aos-easing="typing">
+            data-aos="typing"
+            data-aos-duration="1500"
+            data-aos-easing="typing">
             Get in Touch
           </h1>
         </div>
