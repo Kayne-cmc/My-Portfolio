@@ -11,28 +11,34 @@ import Animalclimber from "../images/AnimalClimber.mov";
 import Escapethecave from "../images/EscapeTheCave.mov";
 import Hyperloop from "../images/HyperLoop.mp4";
 import Batterybox from "../images/BatteryBox.mp4"
+import Workouttracker from '../images/WorkoutTracker.mp4';
 import AnimalClimber from "../images/AnimalClimber.jpg";
 import EscapeTheCave from "../images/EscapeTheCave.jpg";
 import HyperLoop from "../images/HyperLoop.jpg";
 import BatteryBox from "../images/BatteryBox.jpg";
+import WorkoutTracker from '../images/WorkoutTracker.png';
 
 const images = [
-  {
-    photo: HyperLoop,
-    link: "first",
-  },
-  {
-    photo: BatteryBox,
-    link: "second",
-  },
-  {
-    photo: AnimalClimber,
-    link: "third",
-  },
-  {
-    photo: EscapeTheCave,
-    link: "last",
-  },
+    {
+        photo: WorkoutTracker,
+        link: 'first'
+    },
+    {
+        photo: HyperLoop,
+        link: "second",
+    },
+    {
+        photo: BatteryBox,
+        link: "third",
+    },
+    {
+        photo: AnimalClimber,
+        link: "fourth",
+    },
+    {
+        photo: EscapeTheCave,
+        link: "last",
+    },
 ];
 
 function Projects() {
@@ -100,6 +106,43 @@ function Projects() {
             loop
             muted
             playsInline
+            src={Workouttracker}
+            className="right"
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+          >
+            Video not supported
+          </video>
+          <div
+            className="left image-content"
+            data-aos="fade-left"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h1 className="header">Workout Tracker</h1>
+            <p className="text">
+                Create, edit and view new workouts with the Workout Tracker. Using the MongoDB, ExpressJS, NodeJS, and ReactJS programming stack, I developed my very first full stack web application. This web applicaiton allows users to create or edit workouts that can be stored and retrieved from a database collection connected to a back-end server.
+            </p>
+            <a
+              href="https://github.com/Kayne-cmc/workout-tracker"
+              target="blank"
+              className="link"
+            >
+              LEARN MORE
+            </a>
+          </div>
+        </div>
+        <Link to="second" className="arrow">
+          <i className="fas fa-chevron-down"></i>
+        </Link>        
+      </div>
+
+      <div className='content-container' id="second">
+        <div className="container">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             src={Hyperloop}
             className="left"
             data-aos="fade-left"
@@ -114,16 +157,14 @@ function Projects() {
           >
             <h1 className="header">The aCADemics HyperLoop</h1>
             <p className="text">
-              During my second year as a student at the University of Waterloo, I
+              During my second year at the University of Waterloo, I
               had the privilege of participating in the McMaster CAD Designathon
-              alongside three bright and enthusiastic Waterloo students. After
-              discussing the four design challenges available, our team chose to
-              explore our creativity and to take on the design the interior of a
+              alongside three bright and enthusiastic Waterloo students. Given a choice between four design challenges, our team decided to
+              explore our creativity and design the interior of a
               Hyperloop train. Using Solidworks and some careful considerations of
-              the constraints given, we finished with a full CAD assembly and a
-              presentation to accompany the masterpiece. This experience was one
+              the provided constraints, we finished with a full CAD assembly and a
+              presentation to accompany the masterpiece. This event was one
               to remember, and the Solidworks experience developed was a bonus.
-              Learn more here.
             </p>
             <a
               href="https://youtu.be/e2PxlpOMfnw"
@@ -134,12 +175,12 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="second" className="arrow">
+        <Link to="third" className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>        
       </div>
      
-      <div className='content-container' id='second'>
+      <div className='content-container' id='third'>
         <div className="container">
           <video
             autoPlay
@@ -160,7 +201,7 @@ function Projects() {
           >
             <h2 className="header">Module Supports</h2>
             <p className="text">
-              As a member of the University of Waterloo Midnight Sun solar car team, I was given the opportunity to design various parts for the Battery box subteam. Using Solidworks, I designed a module support to prevent the battery modules from moving when the car was operating.
+              As a member of the University of Waterloo Midnight Sun solar car team, I was given the opportunity to participate in the process of designing the battery system that powers the car. Using Solidworks, I designed a support to prevent the battery modules from moving while the car was operating. After many discussions and revisions with the team, the final product was a module support which met all the specifications and optimizes air flow of the batteries to prevent overheating.
             </p>
             <a
               className="link"
@@ -171,12 +212,12 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="third" className="arrow">
+        <Link to="fourth" className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>
       </div>
 
-      <div className='content-container' id='third'>
+      <div className='content-container' id='fourth'>
         <div className="container">
           <video
             autoPlay
@@ -197,11 +238,7 @@ function Projects() {
           >
             <h2 className="header">The Animal Climber</h2>
             <p className="text">
-              Escape The Cave! - My very first personal coding project. After
-              learning the Java programming language, I used Android Studios to
-              create my first mobile application. This application is a simple
-              high score game that involves jumping from platform to platform
-              while dodging falling obstacles.
+                For our final project during our first year, my group and I were tasked to design and create a prototype for a toy. The Animal Climber is a wind up toy that uses 3D printed parts to climb along a straight track.
             </p>
             <a
               className="link"
@@ -238,10 +275,10 @@ function Projects() {
           >
             <h2 className="header">Escape The Cave</h2>
             <p className="text">
-              Escape The Cave! - My very first personal coding project. After
-              learning the Java programming language, I used Android Studios to
+              Escape The Cave! - My very first personal programming project. After
+              learning the Java programming language, I used the Android Studios IDE to
               create my first mobile application. This application is a simple
-              high score game that involves jumping from platform to platform
+              high score game that involves player interaction to control a virtual character and jump between platforms
               while dodging falling obstacles.
             </p>
             <a

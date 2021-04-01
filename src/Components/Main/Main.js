@@ -61,28 +61,20 @@ function Main() {
           >
             here
           </a>
-          !) but most of all, I love learning new things and teaching others!
-          From working with younger students in the after school tutoring
-          program at my high school to becoming a self-employed math tutor, I
-          have developed a passion for helping others learn and succeed in their
-          careers.
+          !) but most of all, I love learning new things and using it to make new projects! Being able to express my creativity in my work is my passion and I want to be able to share it with others.
         </p>
         <h1 className="header">My story, my goals</h1>
-        <p className="text">
-          Ever since I was a kid, I have always been interested in how things
-          worked. Whether it's at school or just my own curious thoughts, I
-          always seek logical answers to my questions. This way of thinking has
-          led me to my love for math, science and my pursuit to study mechanical
-          engineering.
-        </p>
+        {/* <p className="text">
+          Ever since I was a kid, I would spend my time dwelling on any problem I could think of. Whether it was a math problem I couldn't figure out or questioning how Bluetooth connection worked, my curiosity always puts me into action.
+        </p> */}
         <p className="text" style={{ marginBottom: 0 }}>
           Growing up in Richmond Hill, I watched my dad's creativity unfold in
           his own personal projects. He was always building something new and I
           always aspired to be creative like him. I started taking technological
           design classes at my high school to improve my practical skills and
           created some of my own personal projects in my spare time. Now as a
-          future mechanical engineer, I still hold the same goal that I had as a
-          child - to create amazing things that help others.
+          future engineer, I still hold the same goal that I had as a
+          child - to create amazing things.
         </p>
         <h1 className="header">Skills</h1>
       </div>

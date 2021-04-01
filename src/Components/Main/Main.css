@@ -133,21 +133,18 @@ body {
     padding: 0 10vw;
   }
 
+  .header {
+    margin-left: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
   .skill-text {
       padding: 0;
   }
 
-  .header {
-    margin-left: 0;
-    text-align: center;
-  }
-
   .opening-text {
-    top: 20%;
-  }
-
-  .header {
-    font-size: 30px;
+    top: 30%;
   }
 
   .text {
@@ -177,4 +174,24 @@ body {
   .opening-text {
     top: 20%;
   }
+}
+
+@media (max-width: 500px) {
+    .page-title {
+        font-size: 75px;
+    }
+
+    .fa-calendar-alt {
+        font-size: 20px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .skill-header {
+        font-size: 20px;
+    }
+
+    .skill-text {
+        font-size: 14px;
+    }
 }
