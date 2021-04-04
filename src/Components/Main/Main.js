@@ -61,20 +61,27 @@ function Main() {
           >
             here
           </a>
-          !) but most of all, I love learning new things and using it to make new projects! Being able to express my creativity in my work is my passion and I want to be able to share it with others.
+          !) but most of all, I love learning new things and applying them into
+          my projects! I am constantly looking for new programming languages to
+          learn and new skills to develop so that I can create more awesome
+          things. Check out the <a
+            href="/projects"
+            style={{
+              color: "rgb(137,169,197)",
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
+            projects
+          </a> I have made so far!
         </p>
         <h1 className="header">My story, my goals</h1>
-        {/* <p className="text">
-          Ever since I was a kid, I would spend my time dwelling on any problem I could think of. Whether it was a math problem I couldn't figure out or questioning how Bluetooth connection worked, my curiosity always puts me into action.
-        </p> */}
         <p className="text" style={{ marginBottom: 0 }}>
-          Growing up in Richmond Hill, I watched my dad's creativity unfold in
-          his own personal projects. He was always building something new and I
-          always aspired to be creative like him. I started taking technological
-          design classes at my high school to improve my practical skills and
-          created some of my own personal projects in my spare time. Now as a
-          future engineer, I still hold the same goal that I had as a
-          child - to create amazing things.
+          Growing up in Richmond Hill, I watched my dad’s creativity unfold as
+          he would be working on something new every week. Whether it was a renovation for the house, a new skateboard obstacle for my brother and I, or a fishing gadget for himself, my dad always
+          kept himself busy. As a kid who couldn't even use a power drill (and I still struggle sometimes), I was
+          amazed by his work and aspired to be creative like him. Now as a
+          future engineer, I hold the same goal that I had as a kid - to explore my imagination and create amazing things.
         </p>
         <h1 className="header">Skills</h1>
       </div>
@@ -83,10 +90,7 @@ function Main() {
         <li>
           <div className="list-item">
             <i className="fab fa-js-square skill"></i>
-            <div
-              className="skill-description"
-              data-aos='fade-right'
-            >
+            <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">Javascript</h1>
               <div className="break"></div>
               <i className="far fa-calendar-alt" />
@@ -98,7 +102,7 @@ function Main() {
         <li>
           <div className="list-item">
             <i className="fab fa-html5 skill" />
-            <div className="skill-description" data-aos='fade-right'>
+            <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">HTML</h1>
               <div className="break"></div>
               <i className="far fa-calendar-alt" />
@@ -110,7 +114,7 @@ function Main() {
         <li>
           <div className="list-item">
             <i className="fab fa-css3 skill"></i>
-            <div className="skill-description" data-aos='fade-right'>
+            <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">CSS</h1>
               <div className="break"></div>
               <i className="far fa-calendar-alt" />
@@ -122,7 +126,7 @@ function Main() {
         <li>
           <div className="list-item">
             <i className="fab fa-react skill" />
-            <div className="skill-description" data-aos='fade-right'>
+            <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">ReactJS</h1>
               <div className="break"></div>
               <i className="far fa-calendar-alt" />
@@ -134,7 +138,7 @@ function Main() {
         <li>
           <div className="list-item">
             <i className="far fa-file-excel skill" />
-            <div className="skill-description" data-aos='fade-right'>
+            <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">Excel VBA</h1>
               <div className="break"></div>
               <i className="far fa-calendar-alt" />
@@ -146,7 +150,7 @@ function Main() {
         <li>
           <div className="list-item">
             <i className="fas fa-cubes skill" />
-            <div className="skill-description" data-aos='fade-right'>
+            <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">SolidWorks</h1>
               <div className="break"></div>
               <i className="far fa-calendar-alt" />
@@ -158,7 +162,7 @@ function Main() {
         <li>
           <div className="list-item">
             <img src={coding} className="skill" alt="C++" />
-            <div className="skill-description" data-aos='fade-right'>
+            <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">C++</h1>
               <div className="break"></div>
               <i className="far fa-calendar-alt" />

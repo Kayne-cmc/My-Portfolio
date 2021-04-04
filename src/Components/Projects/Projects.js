@@ -69,6 +69,7 @@ function Projects() {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2500,
+    pauseOnHover: false,
     lazyLoad: true,
     slidesToScroll: 1,
     centerPadding: 0,
@@ -120,7 +121,7 @@ function Projects() {
           >
             <h1 className="header">Workout Tracker</h1>
             <p className="text">
-                Create, edit and view new workouts with the Workout Tracker. Using the MongoDB, ExpressJS, NodeJS, and ReactJS programming stack, I developed my very first full stack web application. This web applicaiton allows users to create or edit workouts that can be stored and retrieved from a database collection connected to a back-end server.
+                Create and save your workouts with the Workout Tracker. Using the MongoDB, ExpressJS, NodeJS, and ReactJS programming stack, I developed my very first full stack web application. This application allows users to list their workouts and view or save changes to them through a local database collection connected to a back-end server.
             </p>
             <a
               href="https://github.com/Kayne-cmc/workout-tracker"
@@ -157,14 +158,7 @@ function Projects() {
           >
             <h1 className="header">The aCADemics HyperLoop</h1>
             <p className="text">
-              During my second year at the University of Waterloo, I
-              had the privilege of participating in the McMaster CAD Designathon
-              alongside three bright and enthusiastic Waterloo students. Given a choice between four design challenges, our team decided to
-              explore our creativity and design the interior of a
-              Hyperloop train. Using Solidworks and some careful considerations of
-              the provided constraints, we finished with a full CAD assembly and a
-              presentation to accompany the masterpiece. This event was one
-              to remember, and the Solidworks experience developed was a bonus.
+                During my second year at the University of Waterloo, I had the privilege of participating in the McMaster CAD Designathon alongside three bright and enthusiastic Waterloo students. Given a choice between four design challenges, our team decided to challenge our imagination and design the interior of a Hyperloop train. Using Solidworks and some careful considerations of the provided constraints, we finished the event with a full CAD assembly as well as a presentation to accompany the masterpiece.
             </p>
             <a
               href="https://youtu.be/e2PxlpOMfnw"
@@ -201,7 +195,7 @@ function Projects() {
           >
             <h2 className="header">Module Supports</h2>
             <p className="text">
-              As a member of the University of Waterloo Midnight Sun solar car team, I was given the opportunity to participate in the process of designing the battery system that powers the car. Using Solidworks, I designed a support to prevent the battery modules from moving while the car was operating. After many discussions and revisions with the team, the final product was a module support which met all the specifications and optimizes air flow of the batteries to prevent overheating.
+                As a member of the University of Waterloo Midnight Sun solar car team, I had the opportunity to participate in the process of designing the battery system that powers the car. Using Solidworks, I designed a support to prevent the battery modules from shifting while the car was moving. After many discussions and revisions with the team, I was able to complete a final design which met all the specifications and optimized the air flow of the batteries to prevent overheating.
             </p>
             <a
               className="link"
@@ -238,7 +232,7 @@ function Projects() {
           >
             <h2 className="header">The Animal Climber</h2>
             <p className="text">
-                For our final project during our first year, my group and I were tasked to design and create a prototype for a toy. The Animal Climber is a wind up toy that uses 3D printed parts to climb along a straight track.
+                During my first year at the University of Waterloo, my group and I were tasked to design and create a prototype for a toy as our final project. After working through the engineering design process, we created The Animal Climber. Our prototype consisted of a wind up toy built with 3D printed parts that travelled along a straight track.
             </p>
             <a
               className="link"
