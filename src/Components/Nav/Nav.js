@@ -24,7 +24,6 @@ function Nav() {
           <ul className="left-nav">
             <li>
               <NavLink to="/" onClick={() => {
-                document.querySelector('html').style.removeProperty('scroll-behavior');
               }}>
                 About Me
               </NavLink>

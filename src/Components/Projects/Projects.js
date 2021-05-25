@@ -21,11 +21,11 @@ import WorkoutTracker from '../images/WorkoutTracker.png';
 const images = [
     {
         photo: WorkoutTracker,
-        link: 'first'
+        link: 'fifth'
     },
     {
         photo: HyperLoop,
-        link: "second",
+        link: "fourth",
     },
     {
         photo: BatteryBox,
@@ -33,11 +33,11 @@ const images = [
     },
     {
         photo: AnimalClimber,
-        link: "fourth",
+        link: "second",
     },
     {
         photo: EscapeTheCave,
-        link: "last",
+        link: "first",
     },
 ];
 
@@ -95,12 +95,53 @@ function Projects() {
             </div>
           ))}
         </Slider>
-        <Link to="first" className="arrow">
+        <Link to="last" className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>
       </div>
 
-      <div className='content-container' id="first">
+      <div className='content-container' id='last'>
+        <div className="container">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            src={Escapethecave}
+            className="right"
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+          >
+            Video not supported
+          </video>
+          <div
+            className="left image-content"
+            data-aos="fade-left"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h2 className="header">Escape The Cave</h2>
+            <p className="text">
+              Escape The Cave! - My very first personal programming project. After
+              learning the Java programming language, I used the Android Studios IDE to
+              create my first mobile application. This application is a simple
+              high score game that involves player interaction to control a virtual character and jump between platforms
+              while dodging falling obstacles.
+            </p>
+            <a
+              className="link"
+              href="https://github.com/Kayne-cmc/Escape-The-Cave"
+              target="blank"
+            >
+              LEARN MORE
+            </a>
+          </div>
+        </div>
+        <Link to="fifth" className="arrow">
+          <i className="fas fa-chevron-down"></i>
+        </Link>  
+      </div>
+
+      <div className='content-container' id="fifth">
         <div className="container">
           <video
             autoPlay
@@ -124,7 +165,7 @@ function Projects() {
                 Create and save your workouts with the Workout Tracker. Using the MongoDB, ExpressJS, NodeJS, and ReactJS programming stack, I developed my very first full stack web application. This application allows users to list their workouts and view or save changes to them through a local database collection connected to a back-end server.
             </p>
             <a
-              href="https://github.com/Kayne-cmc/workout-tracker"
+              href="https://github.com/Kayne-cmc/Workout-Tracker"
               target="blank"
               className="link"
             >
@@ -132,12 +173,12 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="second" className="arrow">
+        <Link to="fourth" className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>        
       </div>
 
-      <div className='content-container' id="second">
+      <div className='content-container' id="fourth">
         <div className="container">
           <video
             autoPlay
@@ -206,12 +247,12 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="fourth" className="arrow">
+        <Link to="second" className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>
       </div>
 
-      <div className='content-container' id='fourth'>
+      <div className='content-container' id='second'>
         <div className="container">
           <video
             autoPlay
@@ -243,12 +284,12 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="last" className="arrow">
+        <Link to="first" className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>
       </div>
 
-      <div className='content-container' id='last'>
+      <div className='content-container' id='first'>
         <div className="container">
           <video
             autoPlay
@@ -277,7 +318,7 @@ function Projects() {
             </p>
             <a
               className="link"
-              href="https://github.com/Kayne-cmc/first-android-app"
+              href="https://github.com/Kayne-cmc/Escape-The-Cave"
               target="blank"
             >
               LEARN MORE
