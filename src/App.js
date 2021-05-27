@@ -4,9 +4,9 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import './Components/Nav/Nav.css';
 import Main from './Components/Main/Main';
 import Projects from './Components/Projects/Projects';
+import './Components/Main/Main.css';
 
 function App() {
   return (

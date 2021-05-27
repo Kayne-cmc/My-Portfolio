@@ -12,33 +12,39 @@ import Escapethecave from "../images/EscapeTheCave.mov";
 import Hyperloop from "../images/HyperLoop.mp4";
 import Batterybox from "../images/BatteryBox.mp4"
 import Workouttracker from '../images/WorkoutTracker.mp4';
+import Brawlhalla from '../images/Brawlhalla.mp4';
 import AnimalClimber from "../images/AnimalClimber.jpg";
 import EscapeTheCave from "../images/EscapeTheCave.jpg";
 import HyperLoop from "../images/HyperLoop.jpg";
 import BatteryBox from "../images/BatteryBox.jpg";
 import WorkoutTracker from '../images/WorkoutTracker.png';
+import BrawlHalla from '../images/BrawlHalla.jpg';
 
 const images = [
-    {
-        photo: WorkoutTracker,
-        link: 'fifth'
-    },
-    {
-        photo: HyperLoop,
-        link: "fourth",
-    },
-    {
-        photo: BatteryBox,
-        link: "third",
-    },
-    {
-        photo: AnimalClimber,
-        link: "second",
-    },
-    {
-        photo: EscapeTheCave,
-        link: "first",
-    },
+  {
+    photo: BrawlHalla,
+    link: "last"
+  },
+  {
+      photo: WorkoutTracker,
+      link: "fifth"
+  },
+  {
+      photo: HyperLoop,
+      link: "fourth"
+  },
+  {
+      photo: BatteryBox,
+      link: "third"
+  },
+  {
+      photo: AnimalClimber,
+      link: "second"
+  },
+  {
+      photo: EscapeTheCave,
+      link: "first"
+  },
 ];
 
 function Projects() {
@@ -107,29 +113,25 @@ function Projects() {
             loop
             muted
             playsInline
-            src={Escapethecave}
-            className="right"
+            src={Brawlhalla}
+            className="left"
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
             Video not supported
           </video>
           <div
-            className="left image-content"
+            className="right image-content"
             data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
           >
-            <h2 className="header">Escape The Cave</h2>
+            <h2 className="header">BrawlBuddies</h2>
             <p className="text">
-              Escape The Cave! - My very first personal programming project. After
-              learning the Java programming language, I used the Android Studios IDE to
-              create my first mobile application. This application is a simple
-              high score game that involves player interaction to control a virtual character and jump between platforms
-              while dodging falling obstacles.
+              As an avid Brawlhalla player, I decided to connect the Brawlhalla community with BrawlBuddies. After creating an account, users are matched based on their region and in-game rankings and stats. Players can find new friends to play with, or keep track of other users' stats.
             </p>
             <a
               className="link"
-              href="https://github.com/Kayne-cmc/Escape-The-Cave"
+              href="https://brawlbuddies.herokuapp.com"
               target="blank"
             >
               LEARN MORE
@@ -150,14 +152,14 @@ function Projects() {
             playsInline
             src={Workouttracker}
             className="right"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
           >
             Video not supported
           </video>
           <div
             className="left image-content"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
             <h1 className="header">Workout Tracker</h1>
@@ -187,14 +189,14 @@ function Projects() {
             playsInline
             src={Hyperloop}
             className="left"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
             Video not supported
           </video>
           <div
             className="right image-content"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
           >
             <h1 className="header">The aCADemics HyperLoop</h1>
@@ -224,14 +226,14 @@ function Projects() {
             playsInline
             src={Batterybox}
             className="right"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
           >
             Video not supported
           </video>
           <div
             className="left image-content"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
             <h2 className="header">Module Supports</h2>
@@ -261,14 +263,14 @@ function Projects() {
             playsInline
             src={Animalclimber}
             className="left"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
             Video not supported
           </video>
           <div
             className="right image-content"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
           >
             <h2 className="header">The Animal Climber</h2>
@@ -298,14 +300,14 @@ function Projects() {
             playsInline
             src={Escapethecave}
             className="right"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
           >
             Video not supported
           </video>
           <div
             className="left image-content"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
             <h2 className="header">Escape The Cave</h2>

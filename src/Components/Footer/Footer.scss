@@ -1,5 +1,6 @@
 .filler {
   overflow: hidden;
+  width: 100%;
 }
 
 .Footer {
@@ -183,7 +184,7 @@ form textarea {
 @media (max-width: 900px) {
   .Footer {
     display: block;
-    width: 100vw;
+    width: 100%;
     padding-bottom: 20px;
   }
 
