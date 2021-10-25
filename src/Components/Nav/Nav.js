@@ -22,13 +22,12 @@ function Nav() {
             <i className="fas fa-bars"></i>
           </label>
           <ul className="left-nav">
-            <li>
-              <NavLink to="/" onClick={() => {
-              }}>
+            <li className="menuItem">
+              <NavLink to="/">
                 About Me
               </NavLink>
             </li>
-            <li>
+            <li className="menuItem">
               <NavLink to="/Projects" exact onClick={() => {
                 document.querySelector('html').style.removeProperty('scroll-behavior');
               }}>
@@ -40,12 +39,12 @@ function Nav() {
             Kayne Chu 
           </a>
           <ul className="right-nav">
-            <li>
+            <li className="menuItem">
               <a href={Resume} target="blank">
                 Resume
               </a>
             </li>
-            <li>
+            <li className="menuItem">
               Contact<i className="fas fa-caret-down"></i>
               <ul>
                 <li className="selector">

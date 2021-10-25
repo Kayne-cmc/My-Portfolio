@@ -43,6 +43,32 @@ body {
   padding-top: 80px;
 }
 
+.introduction-link {
+  display: inline-block;
+  position: relative;
+  color: rgb(137,169,197);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.introduction-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(137,169,197);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.introduction-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .header {
   margin-left: calc(50vw - 525px);
   font-family: "Open Sans Condensed", sans-serif;
@@ -66,8 +92,8 @@ body {
     align-items: center;
     justify-content: center;
     list-style: none;
-    padding: 0;
     margin-top: 0;
+    padding: 0 calc(50vw - 525px);
     max-width: 1050px;
 }
 
@@ -118,6 +144,53 @@ body {
     margin: 0;
     margin-top: 5px;
     padding: 0;
+}
+
+.Projects-demo {
+  width: 100%;
+  max-width: 1050px;
+  padding: 0 calc(50vw - 525px);
+}
+
+.Projects-demo table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Projects-demo table tr {
+  display: flex;
+}
+
+.Projects-demo table td {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.demo-tab {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-tab img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.demo-tab-description {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  opacity: 1;
+  bottom: -60%;
+  background-color: rgba(0,0,0,0.5);
+  transition: bottom 0.75s;
+}
+
+.demo-tab img:hover ~ .demo-tab-description, .demo-tab-description:hover {
+  bottom: 0;
 }
 
 .break {

@@ -4,12 +4,23 @@ import "aos/dist/aos.css";
 import "./Main.css";
 import Nav from "../Nav/Nav";
 import Testphoto from "../images/Portrait.jpg";
+import Introduction from "./Introduction";
 import Footer from "../Footer/Footer";
 import coding from "../images/C++.png";
+// import BrawlBuddies from '../images/BrawlBuddies.png';
+// import WorkoutTracker from '../images/WorkoutTracker.png';
+import ScrollMagic from 'scrollmagic';
 
 function Main() {
   useEffect(() => {
     document.querySelector("html").style.scrollBehavior = "smooth";
+
+    // const controller = new ScrollMagic.Controller();
+    // const scene = new ScrollMagic.Scene({
+    //   duration: 100,
+    //   offset: 50
+    // }).setPin("test");
+    // controller.addScene(scene)
   }, []);
 
   return (
@@ -43,48 +54,7 @@ function Main() {
           </Link>
         </div>
       </div>
-
-      <div className="introduction">
-        <h1 className="header">A Little Bit About Myself. . .</h1>
-        <p className="text">
-          I am a 2B Mechanical Engineering student at the University of
-          Waterloo. I love a nice relaxing day of coding or skateboarding (Check
-          out my skateboarding page{" "}
-          <a
-            href="https://www.instagram.com/kayne.skates/"
-            target="blank"
-            style={{
-              color: "rgb(137,169,197)",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            here
-          </a>
-          !) but most of all, I love learning new things and applying them into
-          my projects! I am constantly looking for new programming languages to
-          learn and new skills to develop so that I can create more awesome
-          things. Check out the <a
-            href="/projects"
-            style={{
-              color: "rgb(137,169,197)",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            projects
-          </a> I have made so far!
-        </p>
-        <h1 className="header">My story, my goals</h1>
-        <p className="text" style={{ marginBottom: 0 }}>
-          Growing up in Richmond Hill, I watched my dad’s creativity unfold as
-          he would be working on something new every week. Whether it was a renovation for the house, a new skateboard obstacle for my brother and I, or a fishing gadget for himself, my dad always
-          kept himself busy. As a kid who couldn't even use a power drill (and I still struggle sometimes), I was
-          amazed by his work and aspired to be creative like him. Now as a
-          future engineer, I hold the same goal that I had as a kid - to explore my imagination and create amazing things.
-        </p>
-        <h1 className="header">Skills</h1>
-      </div>
+      <Introduction />
 
       <ul className="skills">
         <li>
@@ -171,6 +141,52 @@ function Main() {
           </div>
         </li>
       </ul>
+{/* 
+      <div style={{ width: "100%" }}><h1 className="header">Projects</h1></div>
+      <div className="Projects-demo">
+        <table>
+          <tr>
+            <td>
+              <div className="demo-tab">
+                <img src={BrawlBuddies} alt="AnimalClimber"/>
+                <div className="break"></div>
+                <div className="demo-tab-description">
+                  <p>AnimalClimber</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div className="demo-tab">
+                <img src={WorkoutTracker} alt="AnimalClimber"/>
+                <div className="break"></div>
+                <div className="demo-tab-description">
+                  <p>AnimalClimber</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div className="demo-tab">
+                <img src={BrawlBuddies} alt="AnimalClimber"/>
+                <div className="break"></div>
+                <div className="demo-tab-description">
+                  <p>AnimalClimber</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div className="demo-tab">
+                <img src={WorkoutTracker} alt="AnimalClimber"/>
+                <div className="break"></div>
+                <div className="demo-tab-description">
+                  <p>AnimalClimber</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div> */}
       <Footer />
     </div>
   );

@@ -6,14 +6,14 @@
 }
 
 .line {
-  height: 10px;
+  height: 5px;
   background: rgb(137,169,197);
 }
 
 .logo {
   position: absolute;
   left: 2%;
-  top: 20px;
+  top: 15px;
   width: 120px;
   height: 40px;
   perspective: 120px;
@@ -104,6 +104,7 @@ nav ul li, nav ul li a {
   text-decoration: none;
   line-height: 60px;
   font-size: 14px;
+  transition-duration: 0.5s;
 }
 
 nav ul li i {
@@ -116,7 +117,6 @@ nav ul .selector, nav ul .selector a{
 
 nav ul li:hover > a, nav ul li:hover {
   background: rgb(80,80,80);
-  transition-duration: 0.5s;
 }
 
 nav ul ul {
@@ -127,10 +127,12 @@ nav ul ul {
   z-index: -1;
 }
 
-nav ul ul li {
+nav ul li ul li {
   position: absolute;
+  top: 0;
   width: 100%;
   text-align: center;
+  transition: all 0.25s linear;
 }
 
 nav ul ul li a {
@@ -139,18 +141,17 @@ nav ul ul li a {
 
 nav ul li:hover > ul li:nth-child(1) {
   z-index: 3;
-  transform: translate(0, 60px);
-  transition: 0.25s linear;
+  top: 60px;
 }
 nav ul li:hover > ul li:nth-child(2) {
   z-index: 2;
-  transform: translate(0, 120px);
-  transition: 0.25s linear 0.125s;
+  top: 120px;
+  transition-delay: 0.125s;
 }
 nav ul li:hover > ul li:nth-child(3) {
   z-index: 1;
-  transform: translate(0, 180px);
-  transition: 0.25s linear 0.25s;
+  top: 180px;
+  transition-delay: 0.25s;
 }
 
 @media (max-width: 1050px) {
@@ -160,31 +161,52 @@ nav ul li:hover > ul li:nth-child(3) {
     right: 0;
   }
 
-  nav ul{
+  .left-nav, .right-nav {
     position: fixed;
     width: 100%;
     text-align: center;
-    left: -100%;
-    transition: all 1s;
+    top: 65px;
+    overflow: hidden;
   }
 
   .left-nav {
-    top: 70px;
+    z-index: 1;
   }
 
   .right-nav {
-    top: 190px;
+    height: 420px;
   }
 
-  nav ul li a, nav ul li{
+  nav ul .menuItem {
+    transition: all 0.5s;
+  }
+
+  nav ul .menuItem:nth-child(1){
+    top: -60px;
+  }
+  nav ul .menuItem:nth-child(2) {
+    top: -120px;
+  }
+
+  #menucheck:checked ~ .left-nav .menuItem:nth-child(1) {
+    top: 0;
+  }
+  #menucheck:checked ~ .left-nav .menuItem:nth-child(2) {
+    top: 0;
+  }
+
+  #menucheck:checked ~ .right-nav .menuItem:nth-child(1) {
+    top: 120px;
+  }
+  #menucheck:checked ~ .right-nav .menuItem:nth-child(2) {
+    top: 120px;
+  }
+
+  nav ul li a, nav ul li {
     display: block;
     width: 100%;
     padding: 0;
     text-align: center;
-  }
-
-  #menucheck:checked ~ ul {
-    left: 0;
   }
 }
 

@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 import Nav from "../Nav/Nav";
+// import ProjectNav from "./ProjectNav";
 import Footer from "../Footer/Footer";
 import Animalclimber from "../images/AnimalClimber.mov";
 import Escapethecave from "../images/EscapeTheCave.mov";
@@ -88,10 +89,11 @@ function Projects() {
   return (
     <div className="Projects">
       <Nav />
+      <h1 className="page-title animate__animated animate__fadeInDown">
+        Projects
+      </h1>
+      {/* <ProjectNav /> */}
       <div className="slideshow">
-        <h1 className="page-title animate__animated animate__fadeInDown">
-          Projects
-        </h1>
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index}>

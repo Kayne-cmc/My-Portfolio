@@ -1,6 +1,11 @@
-.slideshow .page-title {
+.page-title {
   margin: 0;
-  text-align: center
+  padding-top: 65px;
+  text-align: center;
+}
+
+.projectNav {
+  display: none;
 }
 
 .slideshow {
@@ -8,7 +13,6 @@
   justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
-  padding-top: 70px;
   max-width: 1050px;
   width: 70vw;
 }
@@ -172,16 +176,18 @@
 }
 
 @media (max-width:1250px) {
-  .prev {
-    left:0;
+  .slideshow {
+    display: none;
   }
-  .next {
-    left: calc(100% - 100px);
+
+  .projectNav {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
 @media (max-width: 950px) {
-    .slideshow .page-title {
+    .page-title {
       font-size: 75px;
     }
   
