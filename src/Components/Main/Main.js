@@ -95,12 +95,36 @@ function Main() {
 
         <li>
           <div className="list-item">
+            <img src={coding} className="skill" alt="C++" />
+            <div className="skill-description" data-aos="fade-right">
+              <h1 className="skill-header header">C++</h1>
+              <div className="break"></div>
+              <i className="far fa-calendar-alt" />
+              <p className="skill-text text">January 2020</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div className="list-item">
             <i className="fab fa-react skill" />
             <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">ReactJS</h1>
               <div className="break"></div>
               <i className="far fa-calendar-alt" />
               <p className="skill-text text">September 2020</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div className="list-item">
+            <i className="fab fa-vuejs skill"></i>
+            <div className="skill-description" data-aos="fade-right">
+              <h1 className="skill-header header">VueJS</h1>
+              <div className="break"></div>
+              <i className="far fa-calendar-alt" />
+              <p className="skill-text text">September 2021</p>
             </div>
           </div>
         </li>
@@ -125,18 +149,6 @@ function Main() {
               <div className="break"></div>
               <i className="far fa-calendar-alt" />
               <p className="skill-text text">September 2019</p>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div className="list-item">
-            <img src={coding} className="skill" alt="C++" />
-            <div className="skill-description" data-aos="fade-right">
-              <h1 className="skill-header header">C++</h1>
-              <div className="break"></div>
-              <i className="far fa-calendar-alt" />
-              <p className="skill-text text">January 2020</p>
             </div>
           </div>
         </li>
