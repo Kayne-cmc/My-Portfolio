@@ -6,52 +6,52 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 import Nav from "../Nav/Nav";
-// import ProjectNav from "./ProjectNav";
+import ProjectNav from "./ProjectNav";
 import Footer from "../Footer/Footer";
 import Animalclimber from "../images/AnimalClimber.mov";
 import Escapethecave from "../images/EscapeTheCave.mov";
 import Hyperloop from "../images/HyperLoop.mp4";
-import Batterybox from "../images/BatteryBox.mp4"
+import ModuleSupport from "../images/ModuleSupport.mp4"
 import Workouttracker from '../images/WorkoutTracker.mp4';
 import Brawlhalla from '../images/Brawlhalla.mp4';
-import AnimalClimber from "../images/AnimalClimber.jpg";
+import AnimalClimberDemo from "../images/AnimalClimberDemo.png";
 import EscapeTheCave from "../images/EscapeTheCave.jpg";
 import HyperLoop from "../images/HyperLoop.jpg";
-import BatteryBox from "../images/BatteryBox.jpg";
-import WorkoutTracker from '../images/WorkoutTracker.png';
+import ModuleSupportDemo from "../images/ModuleSupportDemo.jpg";
+import WorkoutTrackerDemo from '../images/WorkoutTrackerDemo.png';
 import BrawlHalla from '../images/BrawlHalla.jpg';
 
 const images = [
   {
     photo: BrawlHalla,
-    link: "last"
+    link: "Brawlbuddies"
   },
   {
-      photo: WorkoutTracker,
-      link: "fifth"
+      photo: WorkoutTrackerDemo,
+      link: "Workout-tracker"
   },
   {
       photo: HyperLoop,
-      link: "fourth"
+      link: "Hyperloop"
   },
   {
-      photo: BatteryBox,
-      link: "third"
+      photo: ModuleSupportDemo,
+      link: "Module-supports"
   },
   {
-      photo: AnimalClimber,
-      link: "second"
+      photo: AnimalClimberDemo,
+      link: "Animal-climber"
   },
   {
       photo: EscapeTheCave,
-      link: "first"
+      link: "Escape-the-cave"
   },
 ];
 
-function Projects() {
-
+function Projects(props) {
   useEffect(() => {
-    document.querySelector('html').style.scrollBehavior = 'smooth';
+    document.querySelector('html').style.scrollBehavior = "smooth";
+    document.getElementById(images[props.index].link).scrollIntoView();
   }, []);
 
   const PrevArrow = ({ onClick }) => {
@@ -103,12 +103,12 @@ function Projects() {
             </div>
           ))}
         </Slider>
-        <Link to="last" className="arrow">
+        <Link to={images[0].link} className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>
       </div>
 
-      <div className='content-container' id='last'>
+      <div className='content-container' id={images[0].link}>
         <div className="container">
           <video
             autoPlay
@@ -140,12 +140,12 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="fifth" className="arrow">
+        <Link to={images[1].link} className="arrow">
           <i className="fas fa-chevron-down"></i>
-        </Link>  
+        </Link>
       </div>
 
-      <div className='content-container' id="fifth">
+      <div className='content-container' id={images[1].link}>
         <div className="container">
           <video
             autoPlay
@@ -177,12 +177,12 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="fourth" className="arrow">
+        <Link to={images[2].link} className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>        
       </div>
 
-      <div className='content-container' id="fourth">
+      <div className='content-container' id={images[2].link}>
         <div className="container">
           <video
             autoPlay
@@ -214,19 +214,19 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="third" className="arrow">
+        <Link to={images[3].link} className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>        
       </div>
      
-      <div className='content-container' id='third'>
+      <div className='content-container' id={images[3].link}>
         <div className="container">
           <video
             autoPlay
             loop
             muted
             playsInline
-            src={Batterybox}
+            src={ModuleSupport}
             className="right"
             data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
@@ -251,12 +251,12 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="second" className="arrow">
+        <Link to={images[4].link} className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>
       </div>
 
-      <div className='content-container' id='second'>
+      <div className='content-container' id={images[4].link}>
         <div className="container">
           <video
             autoPlay
@@ -288,12 +288,12 @@ function Projects() {
             </a>
           </div>
         </div>
-        <Link to="first" className="arrow">
+        <Link to={images[5].link} className="arrow">
           <i className="fas fa-chevron-down"></i>
         </Link>
       </div>
 
-      <div className='content-container' id='first'>
+      <div className='content-container' id={images[5].link}>
         <div className="container">
           <video
             autoPlay

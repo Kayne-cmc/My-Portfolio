@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,13 +9,14 @@ import Projects from './Components/Projects/Projects';
 import './Components/Main/Main.css';
 
 function App() {
+
+  const [test, setIndex] = useState(0);
+
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route exact path='/' component={Main}/>
-          <Route path='/Projects' component={Projects} />
-        </Switch>
+        <Route exact path='/'><Main index={test} setIndex={setIndex} /></Route>
+        <Route path='/Projects'><Projects index={test} setIndex={setIndex}/></Route>
       </Router>
     </div>
   )

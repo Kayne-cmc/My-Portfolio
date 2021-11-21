@@ -1,0 +1,46 @@
+.projectNav {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    overflow: hidden;
+}
+
+.projectNav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.projectNav ul span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.projectNav ul li {
+    margin-right: 20px;
+    background: rgb(137,169,197);
+    padding: 4px 0;
+    width: calc(100% - 10px);
+    left: 100%;
+    position: relative;
+    text-align: center;
+    transition: all 1s cubic-bezier(0,1,.5,.98);
+}
+
+.projectNav ul i {
+    width: 10px;
+    right: 0;
+}
+
+.projectNav ul i:hover ~ li, .projectNav ul li:hover {
+    left: 0;
+}
+
+.projectNav ul li a {
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif;
+    color: black;
+    width: 100%;
+}

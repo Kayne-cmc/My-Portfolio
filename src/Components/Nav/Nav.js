@@ -1,7 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from "react-scroll";
 import './Nav.css';
 import Resume from './Resume.pdf';
+
+function scrollToFooter() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
 
 function Nav() {
   return (
@@ -23,16 +27,15 @@ function Nav() {
           </label>
           <ul className="left-nav">
             <li className="menuItem">
-              <NavLink to="/">
+              <a href="/">
                 About Me
-              </NavLink>
+              </a>
             </li>
             <li className="menuItem">
-              <NavLink to="/Projects" exact onClick={() => {
-                document.querySelector('html').style.removeProperty('scroll-behavior');
-              }}>
+              <a href="/Projects/"
+              >
                 Projects
-              </NavLink>
+              </a>
             </li>
           </ul>
           <a className="title" href="/">
@@ -44,8 +47,7 @@ function Nav() {
                 Resume
               </a>
             </li>
-            <li className="menuItem">
-              Contact<i className="fas fa-caret-down"></i>
+            <li className="menuItem"><Link to="/" onClick={scrollToFooter}>Contact<i className="fas fa-caret-down"></i></Link>
               <ul>
                 <li className="selector">
                   <a

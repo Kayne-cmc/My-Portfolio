@@ -146,53 +146,6 @@ body {
     padding: 0;
 }
 
-.Projects-demo {
-  width: 100%;
-  max-width: 1050px;
-  padding: 0 calc(50vw - 525px);
-}
-
-.Projects-demo table {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.Projects-demo table tr {
-  display: flex;
-}
-
-.Projects-demo table td {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-
-.demo-tab {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-}
-
-.demo-tab img {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.demo-tab-description {
-  position: absolute;
-  width: 100%;
-  height: 60%;
-  text-align: center;
-  opacity: 1;
-  bottom: -60%;
-  background-color: rgba(0,0,0,0.5);
-  transition: bottom 0.75s;
-}
-
-.demo-tab img:hover ~ .demo-tab-description, .demo-tab-description:hover {
-  bottom: 0;
-}
-
 .break {
     flex-basis: 100%;
     height: 0;

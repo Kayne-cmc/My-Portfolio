@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import "aos/dist/aos.css";
 import "./Main.css";
 import Nav from "../Nav/Nav";
 import Testphoto from "../images/Portrait.jpg";
 import Introduction from "./Introduction";
+import ProjectDemo from './ProjectDemo';
 import Footer from "../Footer/Footer";
 import coding from "../images/C++.png";
-// import BrawlBuddies from '../images/BrawlBuddies.png';
-// import WorkoutTracker from '../images/WorkoutTracker.png';
-import ScrollMagic from 'scrollmagic';
+// import ScrollMagic from 'scrollmagic';
 
-function Main() {
+function Main(props) {
   useEffect(() => {
     document.querySelector("html").style.scrollBehavior = "smooth";
 
@@ -39,7 +38,7 @@ function Main() {
           >
             Hi, I'm Kayne
           </h1>
-          <Link
+          <ScrollLink
             className="arrow"
             style={{ fontSize: 30 }}
             to="/"
@@ -51,11 +50,10 @@ function Main() {
               className="fas fa-chevron-down"
               style={{ color: "rgb(255,190,210)" }}
             ></i>
-          </Link>
+          </ScrollLink>
         </div>
       </div>
       <Introduction />
-
       <ul className="skills">
         <li>
           <div className="list-item">
@@ -153,52 +151,9 @@ function Main() {
           </div>
         </li>
       </ul>
-{/* 
+      
       <div style={{ width: "100%" }}><h1 className="header">Projects</h1></div>
-      <div className="Projects-demo">
-        <table>
-          <tr>
-            <td>
-              <div className="demo-tab">
-                <img src={BrawlBuddies} alt="AnimalClimber"/>
-                <div className="break"></div>
-                <div className="demo-tab-description">
-                  <p>AnimalClimber</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div className="demo-tab">
-                <img src={WorkoutTracker} alt="AnimalClimber"/>
-                <div className="break"></div>
-                <div className="demo-tab-description">
-                  <p>AnimalClimber</p>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div className="demo-tab">
-                <img src={BrawlBuddies} alt="AnimalClimber"/>
-                <div className="break"></div>
-                <div className="demo-tab-description">
-                  <p>AnimalClimber</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div className="demo-tab">
-                <img src={WorkoutTracker} alt="AnimalClimber"/>
-                <div className="break"></div>
-                <div className="demo-tab-description">
-                  <p>AnimalClimber</p>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div> */}
+      <ProjectDemo index={props.index} setIndex={props.setIndex}/>
       <Footer />
     </div>
   );

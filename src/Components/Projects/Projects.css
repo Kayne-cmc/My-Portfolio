@@ -4,10 +4,6 @@
   text-align: center;
 }
 
-.projectNav {
-  display: none;
-}
-
 .slideshow {
   margin: 0 auto;
   justify-content: center;
@@ -93,6 +89,7 @@
 
 .container {
   display: grid;
+  /* grid-template-columns: 49% 2% 49%; */
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
   justify-content: center;
@@ -105,6 +102,10 @@
 .container video {
   width: 100%;
 }
+
+/* .test {
+  background-color: black;
+} */
 
 .image-content {
   display: flex;
@@ -178,11 +179,6 @@
 @media (max-width:1250px) {
   .slideshow {
     display: none;
-  }
-
-  .projectNav {
-    display: flex;
-    justify-content: flex-end;
   }
 }
 
