@@ -293,7 +293,7 @@ function Projects(props) {
         </Link>
       </div>
 
-      <div className='content-container' id={images[5].link}>
+      <div className='content-container' id={images[5].link} style={{ marginBottom: "100px" }}>
         <div className="container">
           <video
             autoPlay

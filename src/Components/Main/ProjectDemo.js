@@ -20,7 +20,7 @@ export default function ProjectDemo(props) {
                             <img src={BrawlBuddiesDemo} alt="Brawlbuddies"/>
                             <div className="break"></div>
                             <div className="demo-tab-description">
-                                <p className="header" style={{marginLeft: "20px"}}>Brawlbuddies</p>
+                                <p className="project-demo-title header">Brawlbuddies</p>
                             </div>
                             </div>
                         </Link>
@@ -31,7 +31,7 @@ export default function ProjectDemo(props) {
                             <img src={WorkoutTrackerDemo} alt="AnimalClimber"/>
                             <div className="break"></div>
                             <div className="demo-tab-description">
-                                <p className="header" style={{marginLeft: "20px"}}>Workout Tracker</p>
+                                <p className="project-demo-title header">Workout Tracker</p>
                             </div>
                             </div>
                         </Link>
@@ -44,7 +44,7 @@ export default function ProjectDemo(props) {
                             <img src={HyperLoopDemo} alt="Hyperloop"/>
                             <div className="break"></div>
                             <div className="demo-tab-description">
-                                <p className="header" style={{marginLeft: "20px"}}>The aCADemics Hyperloop</p>
+                                <p className="project-demo-title header">The aCADemics Hyperloop</p>
                             </div>
                             </div>
                         </Link>
@@ -55,7 +55,7 @@ export default function ProjectDemo(props) {
                             <img src={ModuleSupportDemo} alt="Module Support"/>
                             <div className="break"></div>
                             <div className="demo-tab-description">
-                                <p className="header" style={{marginLeft: "20px"}}>Module Supports</p>
+                                <p className="project-demo-title header">Module Supports</p>
                             </div>
                             </div>
                         </Link>
@@ -68,7 +68,7 @@ export default function ProjectDemo(props) {
                             <img src={AnimalClimberDemo} alt="AnimalClimber"/>
                             <div className="break"></div>
                             <div className="demo-tab-description">
-                                <p className="header" style={{marginLeft: "20px"}}>The Animal Climber</p>
+                                <p className="project-demo-title header">The Animal Climber</p>
                             </div>
                             </div>
                         </Link>
@@ -79,7 +79,7 @@ export default function ProjectDemo(props) {
                                 <img src={EscapeTheCaveDemo} alt="Escape The Cave"/>
                                 <div className="break"></div>
                                 <div className="demo-tab-description">
-                                    <p className="header" style={{marginLeft: "20px"}}>Escape The Cave</p>
+                                    <p className="project-demo-title header">Escape The Cave</p>
                                 </div>
                             </div>
                         </Link>

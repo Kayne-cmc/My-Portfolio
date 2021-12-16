@@ -103,10 +103,6 @@
   width: 100%;
 }
 
-/* .test {
-  background-color: black;
-} */
-
 .image-content {
   display: flex;
   justify-content: space-around;
@@ -144,6 +140,7 @@
   text-decoration: none;
   color: black;
   border: 2px solid rgb(137,169,197);
+  font-family: "Montserrat", sans-serif;
   border-radius: 15px;
   height: fit-content;
   width: fit-content;

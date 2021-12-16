@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1050px;
     padding: 0 calc(50vw - 525px);
+    margin-bottom: 25px;
 }
 
 .Projects-demo table {
@@ -43,11 +44,18 @@
 
 .demo-tab-description {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     opacity: 0;
     background-color: rgba(137,169,197,0.8);
     transition: opacity 0.5s;
+}
+
+.project-demo-title {
+    margin: 0;
 }
 
 .demo-tab img:hover ~ .demo-tab-description, .demo-tab-description:hover {
