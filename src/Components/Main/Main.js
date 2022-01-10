@@ -7,7 +7,8 @@ import Testphoto from "../images/Portrait.jpg";
 import Introduction from "./Introduction";
 import ProjectDemo from './ProjectDemo';
 import Footer from "../Footer/Footer";
-import coding from "../images/C++.png";
+import c from "../images/C++.png";
+import typescript from "../images/Typescript.png";
 // import ScrollMagic from 'scrollmagic';
 
 function Main(props) {
@@ -69,6 +70,18 @@ function Main(props) {
 
         <li>
           <div className="list-item">
+            <img src={typescript} className="skill" alt="TypeScript" />
+            <div className="skill-description" data-aos="fade-right">
+              <h1 className="skill-header header">TypeScript</h1>
+              <div className="break"></div>
+              <i className="far fa-calendar-alt" />
+              <p className="skill-text text">September 2021</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div className="list-item">
             <i className="fab fa-html5 skill" />
             <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">HTML</h1>
@@ -93,7 +106,7 @@ function Main(props) {
 
         <li>
           <div className="list-item">
-            <img src={coding} className="skill" alt="C++" />
+            <img src={c} className="skill" alt="C++" />
             <div className="skill-description" data-aos="fade-right">
               <h1 className="skill-header header">C++</h1>
               <div className="break"></div>
