@@ -5,7 +5,7 @@ export default function Introduction() {
 	<div className="introduction">
     	<h1 className="header">A little bit about myself. . .</h1>
     	<p className="text">
-			I am a 3A Mechanical Engineering student at the University of Waterloo.
+			I am a 3B Mechanical Engineering student at the University of Waterloo.
 			I love a nice relaxing day of coding or skateboarding (Check out my
 			skateboarding page{" "}
         <a
@@ -15,8 +15,7 @@ export default function Introduction() {
         >
 			here
         </a>
-			!) but most of all, I love learning new things and applying them into my
-			projects! I am constantly looking for new programming languages to learn
+			!) but most of all, I love learning new things and applying them into my work! I am constantly looking for new programming languages to learn
 			and new skills to develop so that I can create more awesome things.
 			Check out the{" "}
         <a
