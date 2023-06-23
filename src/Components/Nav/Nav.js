@@ -51,7 +51,7 @@ function Nav() {
               <ul>
                 <li className="selector">
                   <a
-                    href="https://www.linkedin.com/in/kayne-chu-273988189?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BT3%2BXw5KSQ26AMHS5FYGRUA%3D%3D"
+                    href="https://www.linkedin.com/in/kaynechu"
                     target="blank"
                   >
                     LinkedIn
